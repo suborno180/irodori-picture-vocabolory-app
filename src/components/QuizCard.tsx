@@ -9,6 +9,7 @@ interface QuizCardProps {
   totalQuestions: number;
   selectedAnswer: string | null;
   onAnswer: (answer: string) => void;
+  showFeedback: boolean;
 }
 
 export default function QuizCard({
@@ -17,6 +18,7 @@ export default function QuizCard({
   totalQuestions,
   selectedAnswer,
   onAnswer,
+  showFeedback,
 }: QuizCardProps) {
   const isCorrect = selectedAnswer === question.correctAnswer;
 
@@ -47,7 +49,7 @@ export default function QuizCard({
           {question.options.map((option, index) => {
             let buttonClass = "p-3 sm:p-4 rounded-xl border-2 transition-all duration-200 text-center font-medium cursor-pointer min-h-[48px] sm:min-h-[56px] w-full focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-800";
 
-            if (selectedAnswer === null) {
+            if (!showFeedback || selectedAnswer === null) {
               buttonClass += " border-slate-600/50 bg-slate-700/30 hover:border-purple-500/50 hover:bg-slate-700/50 active:scale-[0.98]";
             } else if (option === question.correctAnswer) {
               buttonClass += " border-green-500 bg-green-500/20 text-green-300";
@@ -61,7 +63,7 @@ export default function QuizCard({
 
             return (
               <label key={index} className={buttonClass}>
-                <input type="radio" name={`q-${question.id}`} value={option} onChange={() => onAnswer(option)} disabled={selectedAnswer !== null} className="sr-only" aria-label={`${label}: ${option}`} />
+                <input type="radio" name={`q-${question.id}`} value={option} onChange={() => onAnswer(option)} disabled={showFeedback && selectedAnswer !== null} className="sr-only" aria-label={`${label}: ${option}`} />
                 <span className="text-base sm:text-xl text-white flex items-center justify-center gap-2">
                   <span className="text-xs text-slate-400 font-normal" aria-hidden="true">{label}</span>
                   {option}
@@ -71,7 +73,7 @@ export default function QuizCard({
           })}
         </fieldset>
 
-        {selectedAnswer !== null && (
+        {showFeedback && selectedAnswer !== null && (
           <div className={`mt-4 sm:mt-6 p-3 sm:p-5 rounded-xl ${isCorrect ? "bg-green-500/20 border border-green-500/30" : "bg-red-500/20 border border-red-500/30"}`} role="alert" aria-live="assertive">
             <p className={`font-semibold text-base sm:text-lg text-center ${isCorrect ? "text-green-300" : "text-red-300"}`}>
               {isCorrect ? "Correct!" : "Incorrect"}
@@ -93,6 +95,14 @@ export default function QuizCard({
                 <p className="text-base text-red-400 line-through">{selectedAnswer}</p>
               </div>
             )}
+          </div>
+        )}
+
+        {!showFeedback && selectedAnswer !== null && (
+          <div className="mt-4 text-center">
+            <span className="text-sm text-slate-500 bg-slate-700/30 px-3 py-1.5 rounded-lg">
+              Answered: <span className="text-white font-medium">{selectedAnswer}</span>
+            </span>
           </div>
         )}
       </div>
