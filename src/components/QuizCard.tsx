@@ -71,7 +71,6 @@ export default function QuizCard({
           })}
         </fieldset>
 
-        {/* Feedback */}
         {selectedAnswer !== null && (
           <div className={`mt-4 sm:mt-6 p-3 sm:p-5 rounded-xl ${isCorrect ? "bg-green-500/20 border border-green-500/30" : "bg-red-500/20 border border-red-500/30"}`} role="alert" aria-live="assertive">
             <p className={`font-semibold text-base sm:text-lg text-center ${isCorrect ? "text-green-300" : "text-red-300"}`}>
