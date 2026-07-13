@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { BookSlug, BOOKS } from "@/lib/types";
 import { getBookList } from "@/lib/quiz";
 import { AppMode } from "@/app/page";
@@ -56,41 +57,31 @@ export default function BookSelector({ mode, onSelect, onBack }: BookSelectorPro
               <button
                 key={book.slug}
                 onClick={() => onSelect(book.slug)}
-                className="group relative overflow-hidden rounded-2xl border border-slate-700/50 bg-slate-800/50 p-6 sm:p-8 text-left transition-all duration-300 hover:border-purple-500/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-purple-500/10 hover:-translate-y-1 focus-visible:border-purple-400"
+                className="group relative overflow-hidden rounded-2xl border border-slate-700/50 bg-slate-800/50 text-left transition-all duration-300 hover:border-purple-500/50 hover:bg-slate-800/80 hover:shadow-lg hover:shadow-purple-500/10 hover:-translate-y-1 focus-visible:border-purple-400"
                 aria-label={`Select ${book.title} - ${book.itemCount} vocabulary items`}
               >
+                <div className="relative w-full overflow-hidden">
+                  <Image
+                    src={config.coverImage}
+                    alt={`${book.title} book cover`}
+                    width={400}
+                    height={560}
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                    <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">
+                      {book.title}
+                    </h2>
+                    <p className="text-slate-300 text-sm">
+                      {book.itemCount} vocabulary items
+                    </p>
+                  </div>
+                </div>
                 <div
                   className={`absolute top-0 left-0 h-1 w-full ${config.color} opacity-80`}
                   aria-hidden="true"
                 />
-                <div className="flex items-start justify-between gap-4">
-                  <div className="min-w-0">
-                    <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2 group-hover:text-purple-300 transition-colors">
-                      {book.title}
-                    </h2>
-                    <p className="text-slate-400 text-sm">
-                      {book.itemCount} vocabulary items
-                    </p>
-                  </div>
-                  <div
-                    className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl ${config.color} bg-opacity-20 flex items-center justify-center shrink-0`}
-                    aria-hidden="true"
-                  >
-                    <svg
-                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </div>
-                </div>
               </button>
             );
           })}

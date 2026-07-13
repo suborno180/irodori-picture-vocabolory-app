@@ -39,6 +39,7 @@ export const BOOKS = {
     url: "https://www.irodori.jpf.go.jp/en/illust/starter.html",
     imagePrefix: "X",
     bookCode: "starter",
+    coverImage: "/starter.png",
   },
   elementary1: {
     slug: "elementary1",
@@ -47,6 +48,7 @@ export const BOOKS = {
     url: "https://www.irodori.jpf.go.jp/en/illust/elementary01.html",
     imagePrefix: "Y",
     bookCode: "elementary01",
+    coverImage: "/elementary_1.png",
   },
   elementary2: {
     slug: "elementary2",
@@ -55,6 +57,7 @@ export const BOOKS = {
     url: "https://www.irodori.jpf.go.jp/en/illust/elementary02.html",
     imagePrefix: "Z",
     bookCode: "elementary02",
+    coverImage: "/elementary_2.png",
   },
   preIntermediate: {
     slug: "preIntermediate",
@@ -63,6 +66,7 @@ export const BOOKS = {
     url: "https://www.irodori.jpf.go.jp/en/illust/pre-intermediate.html",
     imagePrefix: "ZZ",
     bookCode: "pre-intermediate",
+    coverImage: "/pre-intermediate.png",
   },
 } as const;
 
