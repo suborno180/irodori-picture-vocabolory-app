@@ -1,0 +1,3390 @@
+{
+  "book": "preIntermediate",
+  "bookTitle": "Pre-Intermediate",
+  "items": [
+    {
+      "id": "ZZ_01_1_01",
+      "romaji": "sukinasupootsu",
+      "imageUrl": "/images/preIntermediate/ZZ_01_1_01_sukinasupootsu.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "すきなすぽうつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_1_02",
+      "romaji": "sumoo",
+      "imageUrl": "/images/preIntermediate/ZZ_01_1_02_sumoo.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "すもう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_1_03",
+      "romaji": "tozan",
+      "imageUrl": "/images/preIntermediate/ZZ_01_1_03_tozan.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "とざん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_1_04",
+      "romaji": "huttosaru",
+      "imageUrl": "/images/preIntermediate/ZZ_01_1_04_huttosaru.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "ふっとさる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_1_05",
+      "romaji": "nai",
+      "imageUrl": "/images/preIntermediate/ZZ_01_1_05_nai.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "ない",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_01",
+      "romaji": "baribuyoo",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_01_baribuyoo.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "ばりぶよう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_02",
+      "romaji": "engeki",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_02_engeki.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "エンゲキ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_03",
+      "romaji": "yakyuu",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_03_yakyuu.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "やきゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_04",
+      "romaji": "rakugo",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_04_rakugo.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "らくご",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_05",
+      "romaji": "bando",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_05_bando.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "バンド",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_06",
+      "romaji": "ragubii",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_06_ragubii.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "ラグビー",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_07",
+      "romaji": "baree",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_07_baree.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "バレー",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_01_2_08",
+      "romaji": "matsuri",
+      "imageUrl": "/images/preIntermediate/ZZ_01_2_08_matsuri.png",
+      "lesson": 1,
+      "kanji": "",
+      "hiragana": "まつり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_2_01",
+      "romaji": "eiganokansoo",
+      "imageUrl": "/images/preIntermediate/ZZ_02_2_01_eiganokansoo.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "えいがのかんそう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_3_01",
+      "romaji": "sukinamono",
+      "imageUrl": "/images/preIntermediate/ZZ_02_3_01_sukinamono.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "すきなもの",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_01",
+      "romaji": "wanwan",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_01_wanwan.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "わんわん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_02",
+      "romaji": "pyuupyuu",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_02_pyuupyuu.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "ぴゅうぴゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_03",
+      "romaji": "gorogoro",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_03_gorogoro.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "ごろごろ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_04",
+      "romaji": "pikapika",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_04_pikapika.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "ぴかぴか",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_05",
+      "romaji": "iraira",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_05_iraira.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "いらいら",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_06",
+      "romaji": "wakuwaku",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_06_wakuwaku.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "わくわく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_07",
+      "romaji": "gaan",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_07_gaan.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "があん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_08",
+      "romaji": "zaazaa",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_08_zaazaa.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "ざあざあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_09",
+      "romaji": "potsupotsu",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_09_potsupotsu.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "ぽつぽつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_10",
+      "romaji": "shitoshito",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_10_shitoshito.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "しとしと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_02_tips_11",
+      "romaji": "shiin",
+      "imageUrl": "/images/preIntermediate/ZZ_02_tips_11_shiin.png",
+      "lesson": 2,
+      "kanji": "",
+      "hiragana": "しいん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_1_01",
+      "romaji": "bukkenjoohoo",
+      "imageUrl": "/images/preIntermediate/ZZ_03_1_01_bukkenjoohoo.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "ぶっけんじょうほう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_2_01",
+      "romaji": "osusumenomachi",
+      "imageUrl": "/images/preIntermediate/ZZ_03_2_01_osusumenomachi.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "おすすめのまち",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_2_02",
+      "romaji": "koogai",
+      "imageUrl": "/images/preIntermediate/ZZ_03_2_02_koogai.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "こうがい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_2_03",
+      "romaji": "oshare",
+      "imageUrl": "/images/preIntermediate/ZZ_03_2_03_oshare.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "おしゃれ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_2_04",
+      "romaji": "takokuseki",
+      "imageUrl": "/images/preIntermediate/ZZ_03_2_04_takokuseki.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "たこくせき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_2_05",
+      "romaji": "shominteki",
+      "imageUrl": "/images/preIntermediate/ZZ_03_2_05_shominteki.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "しょみんてき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_3_01",
+      "romaji": "hikkoshi",
+      "imageUrl": "/images/preIntermediate/ZZ_03_3_01_hikkoshi.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "ひっこし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_03_tips_01",
+      "romaji": "heyanomuki",
+      "imageUrl": "/images/preIntermediate/ZZ_03_tips_01_heyanomuki.png",
+      "lesson": 3,
+      "kanji": "",
+      "hiragana": "へやのむき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_01",
+      "romaji": "eakon",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_01_eakon.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "えあこん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_02",
+      "romaji": "kankisen",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_02_kankisen.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "かんきせん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_03",
+      "romaji": "mado",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_03_mado.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "まど",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_04",
+      "romaji": "denki",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_04_denki.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "でんき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_05",
+      "romaji": "toire",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_05_toire.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "トイレ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_06",
+      "romaji": "mizu",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_06_mizu.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "みず",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_07",
+      "romaji": "oyu",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_07_oyu.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "おゆ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_08",
+      "romaji": "mizumore",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_08_mizumore.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "みずもれ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_09",
+      "romaji": "kagi",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_09_kagi.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "かぎ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_10",
+      "romaji": "waifai",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_10_waifai.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "わいふぁい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_11",
+      "romaji": "hachinosu",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_11_hachinosu.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "はちのす",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_1_12",
+      "romaji": "tori",
+      "imageUrl": "/images/preIntermediate/ZZ_04_1_12_tori.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "とり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_01",
+      "romaji": "oto",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_01_oto.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "おと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_02",
+      "romaji": "gomidashi",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_02_gomidashi.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "ごみあし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_03",
+      "romaji": "ryoori",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_03_ryoori.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "りょうり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_04",
+      "romaji": "mono",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_04_mono.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "もの",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_05",
+      "romaji": "jitensha",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_05_jitensha.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "ジテンシャ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_06",
+      "romaji": "tabako",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_06_tabako.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "たばこ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_07",
+      "romaji": "kodomo",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_07_kodomo.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "こども",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_08",
+      "romaji": "petto",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_08_petto.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "ぺっと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_2_09",
+      "romaji": "kujoootsutaeru",
+      "imageUrl": "/images/preIntermediate/ZZ_04_2_09_kujoootsutaeru.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "くじょうおつたえる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_3_01",
+      "romaji": "kujoooukeru",
+      "imageUrl": "/images/preIntermediate/ZZ_04_3_01_kujoooukeru.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "くじょうおうける",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_4_01",
+      "romaji": "sundeiruie",
+      "imageUrl": "/images/preIntermediate/ZZ_04_4_01_sundeiruie.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "すんでいるいえ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_bunpo_01",
+      "romaji": "noodoobun",
+      "imageUrl": "/images/preIntermediate/ZZ_04_bunpo_01_noodoobun.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "のうどうぶん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_bunpo_02",
+      "romaji": "ukemibun",
+      "imageUrl": "/images/preIntermediate/ZZ_04_bunpo_02_ukemibun.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "うけみぶん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_bunpo_03",
+      "romaji": "jidooshibun",
+      "imageUrl": "/images/preIntermediate/ZZ_04_bunpo_03_jidooshibun.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "じどうしぶん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_04_bunpo_04",
+      "romaji": "ukemibun",
+      "imageUrl": "/images/preIntermediate/ZZ_04_bunpo_04_ukemibun.png",
+      "lesson": 4,
+      "kanji": "",
+      "hiragana": "うけみぶん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_1_01",
+      "romaji": "chuumon",
+      "imageUrl": "/images/preIntermediate/ZZ_05_1_01_chuumon.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ちゅうもん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_1_02",
+      "romaji": "raamen",
+      "imageUrl": "/images/preIntermediate/ZZ_05_1_02_raamen.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "らあめん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_1_03",
+      "romaji": "hanbaagu",
+      "imageUrl": "/images/preIntermediate/ZZ_05_1_03_hanbaagu.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "はんばあぐ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_1_04",
+      "romaji": "huraidopoteto",
+      "imageUrl": "/images/preIntermediate/ZZ_05_1_04_huraidopoteto.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ふらいどぽてと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_1_05",
+      "romaji": "pafe",
+      "imageUrl": "/images/preIntermediate/ZZ_05_1_05_pafe.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ぱふぇ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_01",
+      "romaji": "chijinnoie",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_01_chijinnoie.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ちじんのいえ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_02",
+      "romaji": "izakaya",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_02_izakaya.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "いざかや",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_03",
+      "romaji": "shokudoo",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_03_shokudoo.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "しょくどう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_04",
+      "romaji": "tomodachinoie",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_04_tomodachinoie.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ともあちのいえ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_05",
+      "romaji": "ninjin",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_05_ninjin.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "にんじん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_06",
+      "romaji": "daikon",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_06_daikon.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "あいこん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_07",
+      "romaji": "taimo",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_07_taimo.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "たいも",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_08",
+      "romaji": "daizu",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_08_daizu.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "あいず",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_09",
+      "romaji": "piinattsu",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_09_piinattsu.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ぴいなっつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_10",
+      "romaji": "butaniku",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_10_butaniku.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ぶたにく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_11",
+      "romaji": "sake",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_11_sake.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "さけ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_12",
+      "romaji": "kome",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_12_kome.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "こめ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_13",
+      "romaji": "aburaage",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_13_aburaage.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "あぶらあげ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_14",
+      "romaji": "miso",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_14_miso.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "ミソ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_15",
+      "romaji": "satoo",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_15_satoo.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "さとう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_16",
+      "romaji": "sakekasu",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_16_sakekasu.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "さけかす",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_4_17",
+      "romaji": "dashi",
+      "imageUrl": "/images/preIntermediate/ZZ_05_4_17_dashi.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "あし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_tips_01",
+      "romaji": "ishi",
+      "imageUrl": "/images/preIntermediate/ZZ_05_tips_01_ishi.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "いし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_tips_02",
+      "romaji": "hasami",
+      "imageUrl": "/images/preIntermediate/ZZ_05_tips_02_hasami.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "はさみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_tips_03",
+      "romaji": "kami",
+      "imageUrl": "/images/preIntermediate/ZZ_05_tips_03_kami.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "かみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_tips_04",
+      "romaji": "ishihasami",
+      "imageUrl": "/images/preIntermediate/ZZ_05_tips_04_ishihasami.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "いしはさみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_tips_05",
+      "romaji": "hasamikami",
+      "imageUrl": "/images/preIntermediate/ZZ_05_tips_05_hasamikami.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "はさみかみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_05_tips_06",
+      "romaji": "kamiishi",
+      "imageUrl": "/images/preIntermediate/ZZ_05_tips_06_kamiishi.png",
+      "lesson": 5,
+      "kanji": "",
+      "hiragana": "かみいし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_1_01",
+      "romaji": "michinoeki",
+      "imageUrl": "/images/preIntermediate/ZZ_06_1_01_michinoeki.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "みちのえき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_1_02",
+      "romaji": "yasuisuupaa",
+      "imageUrl": "/images/preIntermediate/ZZ_06_1_02_yasuisuupaa.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "やすいすうぱあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_1_03",
+      "romaji": "gyoomuyoosuupaa",
+      "imageUrl": "/images/preIntermediate/ZZ_06_1_03_gyoomuyoosuupaa.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "ぎょうむようすうぱあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_1_04",
+      "romaji": "osoozaiya",
+      "imageUrl": "/images/preIntermediate/ZZ_06_1_04_osoozaiya.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "おそうざいや",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_2_01",
+      "romaji": "nettonokiji",
+      "imageUrl": "/images/preIntermediate/ZZ_06_2_01_nettonokiji.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "ねっとのきじ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_2_02",
+      "romaji": "kanetsuchuu",
+      "imageUrl": "/images/preIntermediate/ZZ_06_2_02_kanetsuchuu.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "かねつちゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_2_03",
+      "romaji": "araimono",
+      "imageUrl": "/images/preIntermediate/ZZ_06_2_03_araimono.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "あらいもの",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_2_04",
+      "romaji": "hitoribun",
+      "imageUrl": "/images/preIntermediate/ZZ_06_2_04_hitoribun.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "ひとりぶん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_2_05",
+      "romaji": "abura",
+      "imageUrl": "/images/preIntermediate/ZZ_06_2_05_abura.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "あぶら",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_2_06",
+      "romaji": "choorijikan",
+      "imageUrl": "/images/preIntermediate/ZZ_06_2_06_choorijikan.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "ちょうりじかん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_2_07",
+      "romaji": "choomiryoo",
+      "imageUrl": "/images/preIntermediate/ZZ_06_2_07_choomiryoo.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "ちょうみりょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_01",
+      "romaji": "jisui",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_01_jisui.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "じすい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_02",
+      "romaji": "kazoku",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_02_kazoku.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "かぞく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_03",
+      "romaji": "kootai",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_03_kootai.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "こうたい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_04",
+      "romaji": "gaishoku",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_04_gaishoku.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "がいしょく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_05",
+      "romaji": "shashoku",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_05_shashoku.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "しゃしょく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_06",
+      "romaji": "shokudoo",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_06_shokudoo.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "しょくどう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_07",
+      "romaji": "teikuauto",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_07_teikuauto.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "ていくあうと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_08",
+      "romaji": "deribarii",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_08_deribarii.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "でりばりい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_3_09",
+      "romaji": "soozaibentoo",
+      "imageUrl": "/images/preIntermediate/ZZ_06_3_09_soozaibentoo.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "そうざいべんとう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_06_tips_01",
+      "romaji": "nakuyouguisu",
+      "imageUrl": "/images/preIntermediate/ZZ_06_tips_01_nakuyouguisu.png",
+      "lesson": 6,
+      "kanji": "",
+      "hiragana": "なくようぐいす",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_01",
+      "romaji": "kinjonohito",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_01_kinjonohito.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "きんじょのひと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_02",
+      "romaji": "ironnakuni",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_02_ironnakuni.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "いろんなくに",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_03",
+      "romaji": "kosodatechuu",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_03_kosodatechuu.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "こそあてちゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_04",
+      "romaji": "yakyuufan",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_04_yakyuufan.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "やきゅうふぁん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_05",
+      "romaji": "kokusaikooryuu",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_05_kokusaikooryuu.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "こくさいこうりゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_06",
+      "romaji": "fan",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_06_fan.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "ふぁん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_07",
+      "romaji": "jidookan",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_07_jidookan.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "じどうかん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_1_08",
+      "romaji": "choonai",
+      "imageUrl": "/images/preIntermediate/ZZ_07_1_08_choonai.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "ちょうない",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_01",
+      "romaji": "shodoo",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_01_shodoo.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "しょどう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_02",
+      "romaji": "wadaiko",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_02_wadaiko.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "わあいこ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_03",
+      "romaji": "huttosaru",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_03_huttosaru.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "ふっとさる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_04",
+      "romaji": "shoogi",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_04_shoogi.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "しょうぎ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_05",
+      "romaji": "gasshoo",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_05_gasshoo.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "がっしょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_06",
+      "romaji": "nihongo",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_06_nihongo.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "にほんご",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_07",
+      "romaji": "aikidoo",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_07_aikidoo.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "あいきどう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_08",
+      "romaji": "pureiguruupu",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_08_pureiguruupu.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "ぷれいぐるうぷ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_2_09",
+      "romaji": "haikingu",
+      "imageUrl": "/images/preIntermediate/ZZ_07_2_09_haikingu.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "はいきんぐ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_07_3_01",
+      "romaji": "jikoshookai",
+      "imageUrl": "/images/preIntermediate/ZZ_07_3_01_jikoshookai.png",
+      "lesson": 7,
+      "kanji": "",
+      "hiragana": "じこしょうかい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_1_01",
+      "romaji": "shokuba",
+      "imageUrl": "/images/preIntermediate/ZZ_08_1_01_shokuba.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "しょくば",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_1_02",
+      "romaji": "kekkonpaatii",
+      "imageUrl": "/images/preIntermediate/ZZ_08_1_02_kekkonpaatii.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "けっこんぱあてぃい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_1_03",
+      "romaji": "saakuru",
+      "imageUrl": "/images/preIntermediate/ZZ_08_1_03_saakuru.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "さあくる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_1_04",
+      "romaji": "nihongogakkoo",
+      "imageUrl": "/images/preIntermediate/ZZ_08_1_04_nihongogakkoo.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "にほんごがっこう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_2_01",
+      "romaji": "jimotonohito",
+      "imageUrl": "/images/preIntermediate/ZZ_08_2_01_jimotonohito.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "じもとのひと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_2_02",
+      "romaji": "izakaya",
+      "imageUrl": "/images/preIntermediate/ZZ_08_2_02_izakaya.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "いざかや",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_2_03",
+      "romaji": "densha",
+      "imageUrl": "/images/preIntermediate/ZZ_08_2_03_densha.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "でんしゃ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_08_2_04",
+      "romaji": "raamenten",
+      "imageUrl": "/images/preIntermediate/ZZ_08_2_04_raamenten.png",
+      "lesson": 8,
+      "kanji": "",
+      "hiragana": "らあめんてん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_01",
+      "romaji": "mendan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_01_mendan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "めんあん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_02",
+      "romaji": "adiisan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_02_adiisan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "あぢいさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_03",
+      "romaji": "kiyamasan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_03_kiyamasan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "きやまさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_04",
+      "romaji": "shokuba",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_04_shokuba.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "しょくば",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_05",
+      "romaji": "rameshusan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_05_rameshusan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "らめしゅさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_06",
+      "romaji": "uzawasan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_06_uzawasan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "うざわさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_07",
+      "romaji": "kinjo",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_07_kinjo.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "きんじょ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_08",
+      "romaji": "koosan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_08_koosan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "こうさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_09",
+      "romaji": "nishiosan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_09_nishiosan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "にしおさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_10",
+      "romaji": "daigaku",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_10_daigaku.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "あいがく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_11",
+      "romaji": "puraasan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_11_puraasan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "ぷらあさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_1_12",
+      "romaji": "arinasan",
+      "imageUrl": "/images/preIntermediate/ZZ_09_1_12_arinasan.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "ありなさん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_2_01",
+      "romaji": "kaisha",
+      "imageUrl": "/images/preIntermediate/ZZ_09_2_01_kaisha.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "カイシャ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_2_02",
+      "romaji": "baa",
+      "imageUrl": "/images/preIntermediate/ZZ_09_2_02_baa.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "ばあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_2_03",
+      "romaji": "basutei",
+      "imageUrl": "/images/preIntermediate/ZZ_09_2_03_basutei.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "ばすてい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_2_04",
+      "romaji": "yatai",
+      "imageUrl": "/images/preIntermediate/ZZ_09_2_04_yatai.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "やたい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_01",
+      "romaji": "animemanga",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_01_animemanga.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "あにめまんが",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_02",
+      "romaji": "dentoobunka",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_02_dentoobunka.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "でんとうぶんか",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_03",
+      "romaji": "kyoomi",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_03_kyoomi.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "きょうみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_04",
+      "romaji": "hisshuukamoku",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_04_hisshuukamoku.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "ひっしゅうかもく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_05",
+      "romaji": "ryuugaku",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_05_ryuugaku.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "りゅうがく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_06",
+      "romaji": "shigoto",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_06_shigoto.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "しごと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_07",
+      "romaji": "ryokoo",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_07_ryokoo.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "リョコウ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_08",
+      "romaji": "seikatsu",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_08_seikatsu.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "せいかつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_09_3_09",
+      "romaji": "kazokushinseki",
+      "imageUrl": "/images/preIntermediate/ZZ_09_3_09_kazokushinseki.png",
+      "lesson": 9,
+      "kanji": "",
+      "hiragana": "かぞくしんせき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_01",
+      "romaji": "nihongogakkoo",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_01_nihongogakkoo.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "にほんごがっこう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_02",
+      "romaji": "chiiki",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_02_chiiki.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "ちいき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_03",
+      "romaji": "onrainressun",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_03_onrainressun.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "おんらいんれっすん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_04",
+      "romaji": "hon",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_04_hon.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "ほん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_05",
+      "romaji": "anime",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_05_anime.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "あにめ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_06",
+      "romaji": "dorama",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_06_dorama.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "どらま",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_07",
+      "romaji": "nihongokooza",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_07_nihongokooza.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "にほんごこうざ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_08",
+      "romaji": "saito",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_08_saito.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "さいと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_09",
+      "romaji": "apuri",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_09_apuri.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "あぷり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_10",
+      "romaji": "eeai",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_10_eeai.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "えいあい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_11",
+      "romaji": "tandemu",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_11_tandemu.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "たんでむ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_12",
+      "romaji": "tomodachi",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_12_tomodachi.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "ともあち",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_10_2_13",
+      "romaji": "benkyoohoohoo",
+      "imageUrl": "/images/preIntermediate/ZZ_10_2_13_benkyoohoohoo.png",
+      "lesson": 10,
+      "kanji": "",
+      "hiragana": "べんきょうほうほう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_01",
+      "romaji": "ayashiimeerua",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_01_ayashiimeerua.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "あやしいめいるあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_02",
+      "romaji": "ayashiimeerub",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_02_ayashiimeerub.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "あやしいめいる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_03",
+      "romaji": "wasuremonoa",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_03_wasuremonoa.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "わすれものあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_04",
+      "romaji": "wasuremonob",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_04_wasuremonob.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "わすれもの",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_05",
+      "romaji": "maigoa",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_05_maigoa.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "まいごあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_06",
+      "romaji": "maigob",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_06_maigob.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "まいご",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_07",
+      "romaji": "otoshimonoa",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_07_otoshimonoa.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "おとしものあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_1_08",
+      "romaji": "otoshimonob",
+      "imageUrl": "/images/preIntermediate/ZZ_11_1_08_otoshimonob.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "おとしもの",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_01",
+      "romaji": "konsaatokaijoo",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_01_konsaatokaijoo.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "こんさあとかいじょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_02",
+      "romaji": "baggu",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_02_baggu.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "ばっぐ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_03",
+      "romaji": "mibunshoomeisho",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_03_mibunshoomeisho.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "みぶんしょうめいしょ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_04",
+      "romaji": "kanjuusu",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_04_kanjuusu.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "かんじゅうす",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_05",
+      "romaji": "hukuro",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_05_hukuro.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "ふくろ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_06",
+      "romaji": "namaeseinengappi",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_06_namaeseinengappi.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "なまえせいねんがっぴ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_07",
+      "romaji": "kyuuaarukoodo",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_07_kyuuaarukoodo.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "きゅうあるこうど",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_08",
+      "romaji": "kamera",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_08_kamera.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "カメラ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_09",
+      "romaji": "hakken",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_09_hakken.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "はっけん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_10",
+      "romaji": "nyuujoo",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_10_nyuujoo.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "んゆうじょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_11",
+      "romaji": "nomu",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_11_nomu.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "のむ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_12",
+      "romaji": "suteru",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_12_suteru.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "すてる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_13",
+      "romaji": "madoguchi",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_13_madoguchi.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "まどぐち",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_14",
+      "romaji": "sonoba",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_14_sonoba.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "そのば",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_15",
+      "romaji": "untenmenkyoshoo",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_15_untenmenkyoshoo.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "うんてんめんきょしょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_16",
+      "romaji": "mainanbaakaado",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_16_mainanbaakaado.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "まいなんばあかあど",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_3_17",
+      "romaji": "zairyuukaado",
+      "imageUrl": "/images/preIntermediate/ZZ_11_3_17_zairyuukaado.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "ざいりゅうかあど",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_11_tips_01",
+      "romaji": "sagimeeru",
+      "imageUrl": "/images/preIntermediate/ZZ_11_tips_01_sagimeeru.png",
+      "lesson": 11,
+      "kanji": "",
+      "hiragana": "さぎめいる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_01",
+      "romaji": "hyakuenshoppu",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_01_hyakuenshoppu.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ひゃくえんしょっぷ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_02",
+      "romaji": "eki",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_02_eki.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "えき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_03",
+      "romaji": "michi",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_03_michi.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "みち",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_04",
+      "romaji": "chuurinjoo",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_04_chuurinjoo.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ちゅうりんじょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_05",
+      "romaji": "nimotsu",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_05_nimotsu.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "にもつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_06",
+      "romaji": "menyuu",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_06_menyuu.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "メンユウ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_07",
+      "romaji": "yuki",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_07_yuki.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ゆき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_1_08",
+      "romaji": "hinketsu",
+      "imageUrl": "/images/preIntermediate/ZZ_12_1_08_hinketsu.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ひんけつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_01",
+      "romaji": "doroboo",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_01_doroboo.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "どろぼう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_02",
+      "romaji": "nusumareta",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_02_nusumareta.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ぬすまれた",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_03",
+      "romaji": "hittakuri",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_03_hittakuri.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ひったくり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_04",
+      "romaji": "surareta",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_04_surareta.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "すられた",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_05",
+      "romaji": "chikan",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_05_chikan.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ちかん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_06",
+      "romaji": "bookoo",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_06_bookoo.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ぼうこう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_07",
+      "romaji": "hushinnahito",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_07_hushinnahito.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ふしんなひと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_08",
+      "romaji": "butsuketa",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_08_butsuketa.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ぶつけた",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_09",
+      "romaji": "hanerareta",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_09_hanerareta.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "はねられた",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_10",
+      "romaji": "hikinige",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_10_hikinige.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ひきにげ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_11",
+      "romaji": "tentoo",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_11_tentoo.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "てんとう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_12",
+      "romaji": "kemuri",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_12_kemuri.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "けむり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_13",
+      "romaji": "hi",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_13_hi.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ひ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_14",
+      "romaji": "moeteiru",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_14_moeteiru.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "もえている",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_15",
+      "romaji": "yamakaji",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_15_yamakaji.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "やまかじ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_16",
+      "romaji": "taoreteiru",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_16_taoreteiru.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "たおれている",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_17",
+      "romaji": "kega",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_17_kega.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "けが",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_18",
+      "romaji": "itai",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_18_itai.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "いたい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_19",
+      "romaji": "kurushii",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_19_kurushii.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "くるしい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_20",
+      "romaji": "119ban",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_20_119ban.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ばん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_21",
+      "romaji": "110ban",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_21_110ban.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ばん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_2_22",
+      "romaji": "jiko",
+      "imageUrl": "/images/preIntermediate/ZZ_12_2_22_jiko.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "じこ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_01",
+      "romaji": "nenzaa",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_01_nenzaa.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ねんざあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_02",
+      "romaji": "nenzai",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_02_nenzai.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ねんざい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_03",
+      "romaji": "nenzau",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_03_nenzau.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "ねんざう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_04",
+      "romaji": "ooamea",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_04_ooamea.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "おうあめあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_05",
+      "romaji": "ooamei",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_05_ooamei.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "おうあめい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_06",
+      "romaji": "ooameu",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_06_ooameu.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "おうあめう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_07",
+      "romaji": "okibikia",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_07_okibikia.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "おきびきあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_08",
+      "romaji": "okibikii",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_08_okibikii.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "おきびきい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_3_09",
+      "romaji": "okibikiu",
+      "imageUrl": "/images/preIntermediate/ZZ_12_3_09_okibikiu.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "おきびきう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_tips_01",
+      "romaji": "yokkoisho",
+      "imageUrl": "/images/preIntermediate/ZZ_12_tips_01_yokkoisho.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "よっこいしょ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_tips_02",
+      "romaji": "seeno",
+      "imageUrl": "/images/preIntermediate/ZZ_12_tips_02_seeno.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "せいの",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_tips_03",
+      "romaji": "ei",
+      "imageUrl": "/images/preIntermediate/ZZ_12_tips_03_ei.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "えい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_tips_04",
+      "romaji": "haichiizu",
+      "imageUrl": "/images/preIntermediate/ZZ_12_tips_04_haichiizu.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "はいちいず",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_tips_05",
+      "romaji": "wasshoi",
+      "imageUrl": "/images/preIntermediate/ZZ_12_tips_05_wasshoi.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "わっしょい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_tips_06",
+      "romaji": "ottotto",
+      "imageUrl": "/images/preIntermediate/ZZ_12_tips_06_ottotto.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "おっとっと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_12_tips_07",
+      "romaji": "sai",
+      "imageUrl": "/images/preIntermediate/ZZ_12_tips_07_sai.png",
+      "lesson": 12,
+      "kanji": "",
+      "hiragana": "さい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_01",
+      "romaji": "kaisha",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_01_kaisha.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "カイシャ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_02",
+      "romaji": "kookoo",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_02_kookoo.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "こうこう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_03",
+      "romaji": "nyuuin",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_03_nyuuin.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "んゆういん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_04",
+      "romaji": "omise",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_04_omise.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "おみせ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_05",
+      "romaji": "petto",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_05_petto.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "ぺっと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_06",
+      "romaji": "daigaku",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_06_daigaku.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "あいがく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_07",
+      "romaji": "kekkonshiki",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_07_kekkonshiki.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "けっこんしき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_08",
+      "romaji": "nihon",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_08_nihon.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "にほん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_09",
+      "romaji": "tanjooiwai",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_09_tanjooiwai.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "たんじょういわい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_2_10",
+      "romaji": "wakare",
+      "imageUrl": "/images/preIntermediate/ZZ_13_2_10_wakare.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "わかれ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_3_01",
+      "romaji": "purezento",
+      "imageUrl": "/images/preIntermediate/ZZ_13_3_01_purezento.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "ぷれぜんと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_3_02",
+      "romaji": "resutoran",
+      "imageUrl": "/images/preIntermediate/ZZ_13_3_02_resutoran.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "レストラン",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_3_03",
+      "romaji": "akusesarii",
+      "imageUrl": "/images/preIntermediate/ZZ_13_3_03_akusesarii.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "あくせさりい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_3_04",
+      "romaji": "massaajiki",
+      "imageUrl": "/images/preIntermediate/ZZ_13_3_04_massaajiki.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "まっさあじき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_4_01",
+      "romaji": "kekkonpaatii",
+      "imageUrl": "/images/preIntermediate/ZZ_13_4_01_kekkonpaatii.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "けっこんぱあてぃい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_4_02",
+      "romaji": "osooshiki",
+      "imageUrl": "/images/preIntermediate/ZZ_13_4_02_osooshiki.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "おそうしき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_4_03",
+      "romaji": "taishoku",
+      "imageUrl": "/images/preIntermediate/ZZ_13_4_03_taishoku.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "たいしょく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_tips_01",
+      "romaji": "haneonobasu",
+      "imageUrl": "/images/preIntermediate/ZZ_13_tips_01_haneonobasu.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "はねおのばす",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_tips_02",
+      "romaji": "numanihamaru",
+      "imageUrl": "/images/preIntermediate/ZZ_13_tips_02_numanihamaru.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "ぬまにはまる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_tips_03",
+      "romaji": "hiniabura",
+      "imageUrl": "/images/preIntermediate/ZZ_13_tips_03_hiniabura.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "ひにあぶら",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_13_tips_04",
+      "romaji": "nijinohashi",
+      "imageUrl": "/images/preIntermediate/ZZ_13_tips_04_nijinohashi.png",
+      "lesson": 13,
+      "kanji": "",
+      "hiragana": "にじのはし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_1_01",
+      "romaji": "kinsenkankaku",
+      "imageUrl": "/images/preIntermediate/ZZ_14_1_01_kinsenkankaku.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "きんせんかんかく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_1_02",
+      "romaji": "hanashiganagai",
+      "imageUrl": "/images/preIntermediate/ZZ_14_1_02_hanashiganagai.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "はなしがながい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_1_03",
+      "romaji": "hankooki",
+      "imageUrl": "/images/preIntermediate/ZZ_14_1_03_hankooki.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "はんこうき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_1_04",
+      "romaji": "yasaigaooi",
+      "imageUrl": "/images/preIntermediate/ZZ_14_1_04_yasaigaooi.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "やさいがおうい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_2_01",
+      "romaji": "shinyuu",
+      "imageUrl": "/images/preIntermediate/ZZ_14_2_01_shinyuu.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "しんゆう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_2_02",
+      "romaji": "anshin",
+      "imageUrl": "/images/preIntermediate/ZZ_14_2_02_anshin.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "あんしん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_2_03",
+      "romaji": "mokuhyoo",
+      "imageUrl": "/images/preIntermediate/ZZ_14_2_03_mokuhyoo.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "もくひょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_3_01",
+      "romaji": "nayamisoodan1",
+      "imageUrl": "/images/preIntermediate/ZZ_14_3_01_nayamisoodan1.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "なやみそうあん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_3_02",
+      "romaji": "nayamisoodan2",
+      "imageUrl": "/images/preIntermediate/ZZ_14_3_02_nayamisoodan2.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "なやみそうあん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_4_01",
+      "romaji": "soojishinai",
+      "imageUrl": "/images/preIntermediate/ZZ_14_4_01_soojishinai.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "そうじしない",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_4_02",
+      "romaji": "urusai",
+      "imageUrl": "/images/preIntermediate/ZZ_14_4_02_urusai.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "うるさい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_4_03",
+      "romaji": "katazukenai",
+      "imageUrl": "/images/preIntermediate/ZZ_14_4_03_katazukenai.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "かたずけない",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_4_04",
+      "romaji": "kattenitaberu",
+      "imageUrl": "/images/preIntermediate/ZZ_14_4_04_kattenitaberu.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "かってにたべる",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_14_tips_01",
+      "romaji": "suso",
+      "imageUrl": "/images/preIntermediate/ZZ_14_tips_01_suso.png",
+      "lesson": 14,
+      "kanji": "",
+      "hiragana": "すそ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_01",
+      "romaji": "hidatakayama1",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_01_hidatakayama1.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ひあたかやま",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_02",
+      "romaji": "hidatakayama2",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_02_hidatakayama2.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ひあたかやま",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_03",
+      "romaji": "hidatakayama3",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_03_hidatakayama3.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ひあたかやま",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_04",
+      "romaji": "hidatakayama4",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_04_hidatakayama4.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ひあたかやま",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_05",
+      "romaji": "ooigawa1",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_05_ooigawa1.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "おういがわ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_06",
+      "romaji": "ooigawa2",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_06_ooigawa2.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "おういがわ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_07",
+      "romaji": "ooigawa3",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_07_ooigawa3.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "おういがわ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_08",
+      "romaji": "ooigawa4",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_08_ooigawa4.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "おういがわ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_09",
+      "romaji": "shimanami1",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_09_shimanami1.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "しまなみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_10",
+      "romaji": "shimanami2",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_10_shimanami2.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "しまなみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_11",
+      "romaji": "shimanami3",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_11_shimanami3.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "しまなみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_1_12",
+      "romaji": "shimanami4",
+      "imageUrl": "/images/preIntermediate/ZZ_15_1_12_shimanami4.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "しまなみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_3_01",
+      "romaji": "ryokoosaki",
+      "imageUrl": "/images/preIntermediate/ZZ_15_3_01_ryokoosaki.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "りょこうさき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_tips_01",
+      "romaji": "jajaan",
+      "imageUrl": "/images/preIntermediate/ZZ_15_tips_01_jajaan.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "じゃじゃあん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_tips_02",
+      "romaji": "panpakapaan",
+      "imageUrl": "/images/preIntermediate/ZZ_15_tips_02_panpakapaan.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ぱんぱかぱあん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_tips_03",
+      "romaji": "pinpoonbuu",
+      "imageUrl": "/images/preIntermediate/ZZ_15_tips_03_pinpoonbuu.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ぴんぽうんぶう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_tips_04",
+      "romaji": "chararii",
+      "imageUrl": "/images/preIntermediate/ZZ_15_tips_04_chararii.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ちゃらりい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_tips_05",
+      "romaji": "pikoon",
+      "imageUrl": "/images/preIntermediate/ZZ_15_tips_05_pikoon.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ぴこうん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_15_tips_06",
+      "romaji": "chiin",
+      "imageUrl": "/images/preIntermediate/ZZ_15_tips_06_chiin.png",
+      "lesson": 15,
+      "kanji": "",
+      "hiragana": "ちいん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_01",
+      "romaji": "kinenkitsuen",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_01_kinenkitsuen.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "きねんきつえん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_02",
+      "romaji": "wayoo",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_02_wayoo.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "わよう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_03",
+      "romaji": "keshiki",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_03_keshiki.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "けしき",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_04",
+      "romaji": "kashikiriburo",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_04_kashikiriburo.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "かしきりぶろ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_05",
+      "romaji": "soogei",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_05_soogei.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "そうげい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_06",
+      "romaji": "chekkuin",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_06_chekkuin.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "へっくいん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_07",
+      "romaji": "chekkuauto",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_07_chekkuauto.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "へっくあうと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_08",
+      "romaji": "chooshoku",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_08_chooshoku.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "ちょうしょく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_09",
+      "romaji": "shokuji",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_09_shokuji.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "しょくじ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_10",
+      "romaji": "ryokan",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_10_ryokan.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "りょかん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_11",
+      "romaji": "minshuku",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_11_minshuku.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "みんしゅく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_2_12",
+      "romaji": "hoteru",
+      "imageUrl": "/images/preIntermediate/ZZ_16_2_12_hoteru.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "ホテル",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_3_01",
+      "romaji": "kuukoo",
+      "imageUrl": "/images/preIntermediate/ZZ_16_3_01_kuukoo.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "くうこう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_3_02",
+      "romaji": "kimono",
+      "imageUrl": "/images/preIntermediate/ZZ_16_3_02_kimono.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "きもの",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_3_03",
+      "romaji": "sakyuu",
+      "imageUrl": "/images/preIntermediate/ZZ_16_3_03_sakyuu.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "さきゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_3_04",
+      "romaji": "hune",
+      "imageUrl": "/images/preIntermediate/ZZ_16_3_04_hune.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "ふね",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_3_05",
+      "romaji": "minnanoiken",
+      "imageUrl": "/images/preIntermediate/ZZ_16_3_05_minnanoiken.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "みんなのいけん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_16_3_06",
+      "romaji": "nodoguro",
+      "imageUrl": "/images/preIntermediate/ZZ_16_3_06_nodoguro.png",
+      "lesson": 16,
+      "kanji": "",
+      "hiragana": "のどぐろ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_01",
+      "romaji": "shinadashi1",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_01_shinadashi1.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "しなあし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_02",
+      "romaji": "shinadashi2",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_02_shinadashi2.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "しなあし",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_03",
+      "romaji": "chikokutodoke1",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_03_chikokutodoke1.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ちこくとどけ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_04",
+      "romaji": "chikokutodoke2",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_04_chikokutodoke2.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ちこくとどけ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_05",
+      "romaji": "denwa1",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_05_denwa1.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "でんわ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_06",
+      "romaji": "denwa2",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_06_denwa2.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "でんわ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_07",
+      "romaji": "ryoori1",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_07_ryoori1.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "りょうり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_08",
+      "romaji": "ryoori2",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_08_ryoori2.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "りょうり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_09",
+      "romaji": "suupaa",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_09_suupaa.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "スーパー",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_10",
+      "romaji": "kaishachikoku",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_10_kaishachikoku.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "かいしゃちこく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_11",
+      "romaji": "kaishadenwa",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_11_kaishadenwa.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "かいしゃでんは",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_1_12",
+      "romaji": "izakaya",
+      "imageUrl": "/images/preIntermediate/ZZ_17_1_12_izakaya.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "いざかや",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_01",
+      "romaji": "sandaru",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_01_sandaru.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "さんある",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_02",
+      "romaji": "nagaikami",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_02_nagaikami.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ながいかみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_03",
+      "romaji": "chapatsu",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_03_chapatsu.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ちゃぱつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_04",
+      "romaji": "hadenakamiiro",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_04_hadenakamiiro.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "はでなかみいろ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_05",
+      "romaji": "hige",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_05_hige.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ひげ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_06",
+      "romaji": "manikyua",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_06_manikyua.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "まにきゅあ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_07",
+      "romaji": "meiku",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_07_meiku.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "めいく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_08",
+      "romaji": "koosui",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_08_koosui.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "こうすい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_09",
+      "romaji": "piasu",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_09_piasu.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ぴあす",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_10",
+      "romaji": "udedokei",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_10_udedokei.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "うでどけい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_2_11",
+      "romaji": "yubiwa",
+      "imageUrl": "/images/preIntermediate/ZZ_17_2_11_yubiwa.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ゆびは",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_01",
+      "romaji": "shigotonoryoo",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_01_shigotonoryoo.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "しごとのりょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_02",
+      "romaji": "toire",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_02_toire.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "トイレ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_03",
+      "romaji": "kowaihito",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_03_kowaihito.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "こわいひと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_04",
+      "romaji": "yasumi",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_04_yasumi.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "やすみ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_05",
+      "romaji": "sekuharapawahara",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_05_sekuharapawahara.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "せくはらぱわはら",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_06",
+      "romaji": "atteinai",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_06_atteinai.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "あっていない",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_07",
+      "romaji": "kyuuryoo",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_07_kyuuryoo.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "きゅうりょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_08",
+      "romaji": "renrakuhoohoo",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_08_renrakuhoohoo.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "れんらくほうほう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_09",
+      "romaji": "zangyoo",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_09_zangyoo.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "ざんぎょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_10",
+      "romaji": "dooryoo",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_10_dooryoo.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "どうりょう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_11",
+      "romaji": "nihongogakushuu",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_11_nihongogakushuu.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "にほんごがくしゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_12",
+      "romaji": "heyanoondo",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_12_heyanoondo.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "へやのうんど",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_17_3_13",
+      "romaji": "mendan",
+      "imageUrl": "/images/preIntermediate/ZZ_17_3_13_mendan.png",
+      "lesson": 17,
+      "kanji": "",
+      "hiragana": "めんあん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_1_01",
+      "romaji": "shigoto",
+      "imageUrl": "/images/preIntermediate/ZZ_18_1_01_shigoto.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "しごと",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_1_02",
+      "romaji": "kaishain",
+      "imageUrl": "/images/preIntermediate/ZZ_18_1_02_kaishain.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "かいしゃいん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_1_03",
+      "romaji": "shehu",
+      "imageUrl": "/images/preIntermediate/ZZ_18_1_03_shehu.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "しぇふ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_1_04",
+      "romaji": "konbini",
+      "imageUrl": "/images/preIntermediate/ZZ_18_1_04_konbini.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "コンビニ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_1_05",
+      "romaji": "hoteru",
+      "imageUrl": "/images/preIntermediate/ZZ_18_1_05_hoteru.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "ホテル",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_2_01",
+      "romaji": "choorei",
+      "imageUrl": "/images/preIntermediate/ZZ_18_2_01_choorei.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "ちょうれい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_2_02",
+      "romaji": "miitingu",
+      "imageUrl": "/images/preIntermediate/ZZ_18_2_02_miitingu.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "みいてぃんぐ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_2_03",
+      "romaji": "teireikaigi",
+      "imageUrl": "/images/preIntermediate/ZZ_18_2_03_teireikaigi.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "ていれいかいぎ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_01",
+      "romaji": "kyuujinjoohoo",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_01_kyuujinjoohoo.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "きゅうじんじょうほう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_02",
+      "romaji": "hanbai",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_02_hanbai.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "はんばい",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_03",
+      "romaji": "seizoo",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_03_seizoo.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "せいぞう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_04",
+      "romaji": "torakku",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_04_torakku.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "とらっく",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_05",
+      "romaji": "kensetsu",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_05_kensetsu.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "けんせつ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_06",
+      "romaji": "konbini",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_06_konbini.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "コンビニ",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_07",
+      "romaji": "kaigo",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_07_kaigo.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "かいご",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_08",
+      "romaji": "ryoori",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_08_ryoori.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "りょうり",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_3_09",
+      "romaji": "ryokan",
+      "imageUrl": "/images/preIntermediate/ZZ_18_3_09_ryokan.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "りょかん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_4_01",
+      "romaji": "nagasawaryokan",
+      "imageUrl": "/images/preIntermediate/ZZ_18_4_01_nagasawaryokan.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "ながさわりょかん",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_4_02",
+      "romaji": "intabyuu",
+      "imageUrl": "/images/preIntermediate/ZZ_18_4_02_intabyuu.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "いんたびゅう",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_bunpo_01",
+      "romaji": "sonkeigo",
+      "imageUrl": "/images/preIntermediate/ZZ_18_bunpo_01_sonkeigo.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "そんけいご",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_bunpo_02",
+      "romaji": "kenjoogo",
+      "imageUrl": "/images/preIntermediate/ZZ_18_bunpo_02_kenjoogo.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "けんじょうご",
+      "meaning": ""
+    },
+    {
+      "id": "ZZ_18_tips_01",
+      "romaji": "hoorensoo",
+      "imageUrl": "/images/preIntermediate/ZZ_18_tips_01_hoorensoo.png",
+      "lesson": 18,
+      "kanji": "",
+      "hiragana": "ほうれんそう",
+      "meaning": ""
+    }
+  ]
+}
