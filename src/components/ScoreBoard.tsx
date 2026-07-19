@@ -137,10 +137,21 @@ export default function ScoreBoard({
                             )}
                           </div>
                           <p className="text-lg font-bold text-white">{question.correctAnswer}</p>
+                          {question.optionDetails[question.correctAnswer]?.romaji && (
+                            <p className="text-xs text-slate-400 italic">{question.optionDetails[question.correctAnswer].romaji}</p>
+                          )}
                           {question.kanji && <p className="text-sm text-slate-300">{question.kanji}</p>}
                           {question.meaning && <p className="text-sm text-purple-300">{question.meaning}</p>}
                           {!isCorrect && userAnswer && (
-                            <p className="text-sm text-red-400 mt-1">Your answer: <span className="line-through">{userAnswer}</span></p>
+                            <div className="mt-1">
+                              <p className="text-sm text-red-400">Your answer: <span className="line-through">{userAnswer}</span></p>
+                              {question.optionDetails[userAnswer]?.romaji && (
+                                <p className="text-xs text-red-400/70 italic">{question.optionDetails[userAnswer].romaji}</p>
+                              )}
+                              {question.optionDetails[userAnswer]?.meaning && (
+                                <p className="text-xs text-red-400/70">{question.optionDetails[userAnswer].meaning}</p>
+                              )}
+                            </div>
                           )}
                         </div>
                       </div>

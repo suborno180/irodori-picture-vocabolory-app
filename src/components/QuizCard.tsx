@@ -78,23 +78,39 @@ export default function QuizCard({
             <p className={`font-semibold text-base sm:text-lg text-center ${isCorrect ? "text-green-300" : "text-red-300"}`}>
               {isCorrect ? "Correct!" : "Incorrect"}
             </p>
-            <div className="mt-3 text-center">
-              <p className="text-2xl sm:text-3xl font-bold text-white">{question.correctAnswer}</p>
-              {question.kanji && <p className="text-base sm:text-lg text-slate-300 mt-1">{question.kanji}</p>}
-              <p className="text-sm text-slate-400 mt-0.5">{question.hiragana}</p>
+
+            <div className="mt-3 space-y-2">
+              {question.options.map((option) => {
+                const isThisCorrect = option === question.correctAnswer;
+                const isThisSelected = option === selectedAnswer;
+                const detail = question.optionDetails[option];
+
+                let rowClass = "flex items-center justify-between p-2 rounded-lg ";
+                if (isThisCorrect) {
+                  rowClass += "bg-green-500/10 border border-green-500/30";
+                } else if (isThisSelected && !isCorrect) {
+                  rowClass += "bg-red-500/10 border border-red-500/30";
+                } else {
+                  rowClass += "bg-slate-700/20 border border-slate-600/20";
+                }
+
+                return (
+                  <div key={option} className={rowClass}>
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className={`text-lg font-bold ${isThisCorrect ? "text-green-400" : isThisSelected && !isCorrect ? "text-red-400" : "text-white"}`}>
+                        {option}
+                      </span>
+                      {isThisCorrect && <span className="text-xs text-green-400 font-medium">&#10003;</span>}
+                      {isThisSelected && !isCorrect && <span className="text-xs text-red-400 font-medium">&#10007;</span>}
+                    </div>
+                    <div className="text-right shrink-0 ml-2">
+                      {detail?.romaji && <p className="text-xs text-slate-400 italic">{detail.romaji}</p>}
+                      {detail?.meaning && <p className="text-xs text-purple-300">{detail.meaning}</p>}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-            {question.meaning && (
-              <div className={`mt-3 pt-3 border-t text-center ${isCorrect ? "border-green-500/20" : "border-red-500/20"}`}>
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Meaning</p>
-                <p className="text-base sm:text-lg text-purple-300 font-medium">{question.meaning}</p>
-              </div>
-            )}
-            {!isCorrect && (
-              <div className="mt-3 pt-3 border-t border-red-500/20 text-center">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Your answer</p>
-                <p className="text-base text-red-400 line-through">{selectedAnswer}</p>
-              </div>
-            )}
           </div>
         )}
 

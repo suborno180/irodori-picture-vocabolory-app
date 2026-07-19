@@ -14,6 +14,11 @@ export interface BookData {
   items: VocabItem[];
 }
 
+export interface OptionDetail {
+  romaji: string;
+  meaning: string;
+}
+
 export interface QuizQuestion {
   id: string;
   imageUrl: string;
@@ -22,6 +27,7 @@ export interface QuizQuestion {
   kanji: string;
   hiragana: string;
   meaning: string;
+  optionDetails: Record<string, OptionDetail>;
 }
 
 export interface QuizState {

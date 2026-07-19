@@ -37,10 +37,29 @@ function getWrongAnswers(
   correctItem: VocabItem,
   allItems: VocabItem[],
   count: number = 3
-): string[] {
+): VocabItem[] {
   const others = allItems.filter((item) => item.id !== correctItem.id);
   const shuffled = shuffleArray(others);
-  return shuffled.slice(0, count).map((item) => item.hiragana || item.romaji);
+  return shuffled.slice(0, count);
+}
+
+function buildOptionDetails(
+  correctItem: VocabItem,
+  wrongItems: VocabItem[]
+): Record<string, { romaji: string; meaning: string }> {
+  const details: Record<string, { romaji: string; meaning: string }> = {};
+  details[correctItem.hiragana || correctItem.romaji] = {
+    romaji: correctItem.romaji,
+    meaning: correctItem.meaning,
+  };
+  for (const item of wrongItems) {
+    const option = item.hiragana || item.romaji;
+    details[option] = {
+      romaji: item.romaji,
+      meaning: item.meaning,
+    };
+  }
+  return details;
 }
 
 export function generateQuiz(
@@ -54,9 +73,11 @@ export function generateQuiz(
   const selectedItems = shuffledItems.slice(0, Math.min(count, shuffledItems.length));
 
   return selectedItems.map((item) => {
-    const wrongAnswers = getWrongAnswers(item, bookData.items, 3);
+    const wrongItems = getWrongAnswers(item, bookData.items, 3);
     const correctAnswer = item.hiragana || item.romaji;
-    const options = shuffleArray([correctAnswer, ...wrongAnswers]);
+    const wrongStrings = wrongItems.map((w) => w.hiragana || w.romaji);
+    const options = shuffleArray([correctAnswer, ...wrongStrings]);
+    const optionDetails = buildOptionDetails(item, wrongItems);
 
     return {
       id: item.id,
@@ -66,6 +87,7 @@ export function generateQuiz(
       kanji: item.kanji,
       hiragana: item.hiragana,
       meaning: item.meaning,
+      optionDetails,
     };
   });
 }
@@ -86,9 +108,11 @@ export function generateQuizByLessons(
   const selectedItems = shuffledItems.slice(0, Math.min(count, shuffledItems.length));
 
   return selectedItems.map((item) => {
-    const wrongAnswers = getWrongAnswers(item, filteredItems, 3);
+    const wrongItems = getWrongAnswers(item, filteredItems, 3);
     const correctAnswer = item.hiragana || item.romaji;
-    const options = shuffleArray([correctAnswer, ...wrongAnswers]);
+    const wrongStrings = wrongItems.map((w) => w.hiragana || w.romaji);
+    const options = shuffleArray([correctAnswer, ...wrongStrings]);
+    const optionDetails = buildOptionDetails(item, wrongItems);
 
     return {
       id: item.id,
@@ -98,6 +122,7 @@ export function generateQuizByLessons(
       kanji: item.kanji,
       hiragana: item.hiragana,
       meaning: item.meaning,
+      optionDetails,
     };
   });
 }
@@ -125,9 +150,11 @@ export function generateQuizFromAllBooks(count: number = 10): QuizQuestion[] {
   const selectedItems = shuffledItems.slice(0, Math.min(count, shuffledItems.length));
 
   return selectedItems.map((item) => {
-    const wrongAnswers = getWrongAnswers(item, allItems, 3);
+    const wrongItems = getWrongAnswers(item, allItems, 3);
     const correctAnswer = item.hiragana || item.romaji;
-    const options = shuffleArray([correctAnswer, ...wrongAnswers]);
+    const wrongStrings = wrongItems.map((w) => w.hiragana || w.romaji);
+    const options = shuffleArray([correctAnswer, ...wrongStrings]);
+    const optionDetails = buildOptionDetails(item, wrongItems);
 
     return {
       id: item.id,
@@ -137,6 +164,7 @@ export function generateQuizFromAllBooks(count: number = 10): QuizQuestion[] {
       kanji: item.kanji,
       hiragana: item.hiragana,
       meaning: item.meaning,
+      optionDetails,
     };
   });
 }
