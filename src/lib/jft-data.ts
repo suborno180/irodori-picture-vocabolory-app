@@ -199,6 +199,15 @@ export const jftResources: JftResource[] = [
     priority: "high",
   },
   {
+    id: "mt-21",
+    title: "মকটেস্ট ২১",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeHjlkciF-4n1NxNt0w-5QniS97C7DRWW6JOCHX_ojMoMAErQ/viewform",
+    password: "irodoribhai1",
+    type: "mocktest",
+    note: "",
+    priority: "high",
+  },
+  {
     id: "mt-22",
     title: "মকটেস্ট ২২",
     link: "https://22-mocktest-irodorivai.netlify.app/",
