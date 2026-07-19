@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>JFT প্রস্তুতি - ইরোদোরি ভাই</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&display=swap');
+        [v-cloak] { display: none !important; }
+        * { font-family: 'Hind Siliguri', 'Segoe UI', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1a1a3e);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            padding: 12px;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; contain: layout paint; }
+        .particle { position: absolute; width: 4px; height: 4px; background: rgba(255, 255, 255, 0.3); border-radius: 50%; animation: float linear infinite; will-change: transform; }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+        }
+
+        .glass { background: rgba(255,255,255,0.12); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 8px 32px rgba(0,0,0,0.3); will-change: transform; }
+        .glass-card { background: rgba(255,255,255,0.08); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 8px 32px rgba(0,0,0,0.25); transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s ease, border-color 0.4s ease; will-change: transform; transform: translateZ(0); backface-visibility: hidden; }
+        .glass-card:hover { transform: translateY(-6px) scale(1.01) translateZ(0); box-shadow: 0 16px 48px rgba(0,0,0,0.4); border-color: rgba(255,255,255,0.25); }
+
+        .gradient-text { background: linear-gradient(135deg, #f093fb, #f5576c, #4facfe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+        .step-circle { background: linear-gradient(135deg, #f093fb, #f5576c); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; flex-shrink: 0; box-shadow: 0 4px 20px rgba(245,87,108,0.4); animation: pulseGlow 2s ease-in-out infinite; }
+        .step-circle-done { background: linear-gradient(135deg, #22c55e, #16a34a) !important; box-shadow: 0 4px 20px rgba(34,197,94,0.4) !important; }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 4px 20px rgba(245,87,108,0.4); }
+            50% { box-shadow: 0 4px 40px rgba(245,87,108,0.8); }
+        }
+
+        .link-truncate { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 10px 14px; color: #93c5fd; font-size: 12px; transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; cursor: pointer; font-family: 'Courier New', monospace; }
+        .link-truncate:hover { background: rgba(255,255,255,0.15); border-color: rgba(147,197,253,0.4); box-shadow: 0 0 30px rgba(147,197,253,0.1); }
+
+        .badge-password { background: linear-gradient(135deg, rgba(251,191,36,0.2), rgba(251,191,36,0.1)); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); backdrop-filter: blur(4px); }
+        .badge-completed { background: linear-gradient(135deg, rgba(34,197,94,0.25), rgba(34,197,94,0.1)); color: #4ade80; border: 1px solid rgba(34,197,94,0.3); }
+        .badge-priority-high { background: linear-gradient(135deg, rgba(239,68,68,0.25), rgba(239,68,68,0.1)); color: #fca5a5; border: 1px solid rgba(239,68,68,0.3); }
+        .badge-priority-medium { background: linear-gradient(135deg, rgba(251,191,36,0.25), rgba(251,191,36,0.1)); color: #fcd34d; border: 1px solid rgba(251,191,36,0.3); }
+        .badge-priority-low { background: linear-gradient(135deg, rgba(96,165,250,0.25), rgba(96,165,250,0.1)); color: #93c5fd; border: 1px solid rgba(96,165,250,0.3); }
+        .badge-type { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.1); }
+
+        .card-priority-high { border-left: 3px solid #ef4444; box-shadow: inset 0 0 40px rgba(239,68,68,0.05); }
+        .card-priority-medium { border-left: 3px solid #f59e0b; box-shadow: inset 0 0 40px rgba(251,191,36,0.05); }
+        .card-priority-low { border-left: 3px solid #3b82f6; box-shadow: inset 0 0 40px rgba(96,165,250,0.05); }
+        .card-completed { border-left: 3px solid #22c55e !important; box-shadow: inset 0 0 40px rgba(34,197,94,0.08) !important; opacity: 0.85; }
+        .card-completed:hover { opacity: 1; }
+
+        .score-box { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 8px 12px; }
+        .score-input { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; width: 56px; text-align: center; border-radius: 8px; padding: 4px 6px; font-size: 14px; font-weight: 700; transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+        .score-input:focus { border-color: rgba(34,197,94,0.5); box-shadow: 0 0 15px rgba(34,197,94,0.15); outline: none; }
+        .score-input::placeholder { color: rgba(255,255,255,0.25); font-weight: 400; }
+
+        .section-header { background: rgba(255,255,255,0.06); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 14px 20px; }
+
+        .fab { position: fixed; bottom: 90px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #f093fb, #f5576c); color: white; border: none; box-shadow: 0 8px 32px rgba(245,87,108,0.5); font-size: 30px; cursor: pointer; transition: transform 0.3s ease; z-index: 100; display: flex; align-items: center; justify-content: center; animation: pulseGlow 2s ease-in-out infinite; will-change: transform; transform: translateZ(0); }
+        .fab:active { transform: scale(0.9) translateZ(0); }
+        @media (min-width: 768px) { .fab { bottom: 30px; right: 30px; } }
+
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(15,12,41,0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-top: 1px solid rgba(255,255,255,0.08); padding: 8px 0 env(safe-area-inset-bottom); display: flex; justify-content: space-around; align-items: center; z-index: 99; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; will-change: transform; transform: translateZ(0); }
+        .bottom-nav::-webkit-scrollbar { display: none; }
+        .bottom-nav button { background: none; border: none; padding: 4px 8px; font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.4); transition: color 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 2px; position: relative; min-width: 52px; flex-shrink: 0; }
+        .bottom-nav button .icon { font-size: 22px; transition: transform 0.3s ease; }
+        .bottom-nav button.active { color: #f5576c; }
+        .bottom-nav button.active .icon { transform: scale(1.1); }
+        .bottom-nav button.active::before { content: ''; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 20px; height: 3px; background: linear-gradient(90deg, #f093fb, #f5576c); border-radius: 4px; }
+
+        .slide-in { animation: slideIn 0.6s cubic-bezier(0.4,0,0.2,1); contain: layout style; }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(30px) scale(0.95); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+        .modal-glass { background: rgba(15,12,41,0.95); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.1); }
+
+        .app-container { max-width: 480px; margin: 0 auto; padding: 0 4px; position: relative; z-index: 1; contain: layout style; }
+        @media (min-width: 640px) { .app-container { max-width: 640px; padding: 0 8px; } }
+        @media (min-width: 1024px) { .app-container { max-width: 1200px; padding: 0 16px; } }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 20px; }
+
+        .input-glass { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: white; transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+        .input-glass:focus { border-color: rgba(245,87,108,0.5); box-shadow: 0 0 30px rgba(245,87,108,0.1); outline: none; }
+        .input-glass::placeholder { color: rgba(255,255,255,0.3); }
+        .input-glass option { background: #1a1a3e; color: white; }
+
+        .text-white-80 { color: rgba(255,255,255,0.8); }
+        .text-white-60 { color: rgba(255,255,255,0.6); }
+        .text-white-40 { color: rgba(255,255,255,0.4); }
+
+        .progress-bar { height: 4px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #22c55e, #4ade80); border-radius: 10px; transition: width 0.5s ease; }
+    </style>
+</head>
+<body>
+
+<div class="particles" id="particles"></div>
+
+<div id="app" v-cloak>
+    <div class="app-container">
+        
+        <!-- HEADER -->
+        <header class="relative overflow-hidden rounded-3xl p-5 md:p-7 mb-6 glass" style="border: 1px solid rgba(255,255,255,0.1);">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-fuchsia-500/10 to-pink-500/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full -ml-24 -mb-24 blur-3xl"></div>
+            <div class="relative flex flex-wrap justify-between items-center">
+                <div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-3xl md:text-4xl">&#x1F4DA;</span>
+                        <h1 class="text-xl md:text-2xl font-extrabold text-white tracking-tight">ইরোদোরি ভাই</h1>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span class="bg-white/10 backdrop-blur-sm px-3 py-0.5 rounded-full text-xs text-white font-bold border border-white/10">JFT প্রস্তুতি</span>
+                        <span class="bg-gradient-to-r from-fuchsia-500/20 to-pink-500/20 backdrop-blur-sm px-3 py-0.5 rounded-full text-xs text-pink-300 font-bold border border-pink-500/20">&#x26A1; ১০০% মার্ক</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-2 md:mt-0">
+                    <div class="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-white text-sm font-bold flex items-center gap-1.5 border border-white/10">
+                        <span>&#x1F9E0;</span>
+                        <span>{{ resources.length }}</span>
+                    </div>
+                    <button @click="resetToDefault" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full text-white text-sm font-medium transition border border-white/10">
+                        <span>&#x21BB;</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Completion Progress -->
+            <div v-if="completedCount > 0" class="relative mt-3 pt-3 border-t border-white/10">
+                <div class="flex items-center justify-between mb-1">
+                    <span class="text-xs text-white/60 font-bold">সম্পন্ন: {{ completedCount }}/{{ totalCount }}</span>
+                    <span class="text-xs text-green-400 font-bold">{{ completionPercent }}%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" :style="{ width: completionPercent + '%' }"></div></div>
+            </div>
+        </header>
+
+        <!-- TOTAL SCORE -->
+        <div class="glass rounded-2xl p-4 mb-5 flex items-center gap-4">
+            <div class="relative flex-shrink-0">
+                <svg width="70" height="70" viewBox="0 0 70 70">
+                    <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="6" />
+                    <circle cx="35" cy="35" r="30" fill="none" stroke="url(#scoreGrad)" stroke-width="6" stroke-linecap="round" :stroke-dasharray="188.5" :stroke-dashoffset="188.5 - (188.5 * totalScore / 250)" transform="rotate(-90 35 35)" style="transition: stroke-dashoffset 1s ease;" />
+                    <defs><linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f093fb" /><stop offset="100%" stop-color="#f5576c" /></linearGradient></defs>
+                </svg>
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <span class="text-lg font-extrabold text-white leading-none">{{ totalScore }}</span>
+                    <span class="text-[9px] text-white/40 font-bold">/250</span>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="text-xl">&#x1F3C6;</span>
+                    <span class="font-extrabold text-white">মোট স্কোর</span>
+                </div>
+                <div class="progress-bar mt-2"><div class="progress-fill" :style="{ width: (totalScore / 250 * 100) + '%' }"></div></div>
+                <div class="flex items-center justify-between mt-1.5">
+                    <span class="text-[10px] text-white/40">{{ scoredCount }}টি টেস্ট দিয়েছেন</span>
+                    <span class="text-[10px] text-white/40">250 এ {{ Math.round(totalScore / 250 * 100) }}%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- STUDY PLAN -->
+        <div class="glass rounded-2xl p-4 mb-5">
+            <div class="flex items-center gap-3 flex-wrap">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">&#x1F4D6;</span>
+                    <span class="font-bold text-white text-sm">পড়ার ক্রম:</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="badge-priority-high text-xs px-3 py-1 rounded-full font-bold backdrop-blur-sm">&#x1F534; ১. মকটেস্ট</span>
+                    <span class="badge-priority-medium text-xs px-3 py-1 rounded-full font-bold backdrop-blur-sm">&#x1F7E1; ২. সমাধান</span>
+                    <span class="badge-priority-low text-xs px-3 py-1 rounded-full font-bold backdrop-blur-sm">&#x1F535; ৩. PDF & লিসেনিং</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEARCH & FILTER -->
+        <div class="glass rounded-2xl p-3 md:p-4 mb-5">
+            <div class="flex flex-col sm:flex-row gap-2">
+                <div class="flex-1 relative">
+                    <input type="text" v-model="searchQuery" placeholder="&#x1F50D; সার্চ করুন..." class="w-full bg-white/5 backdrop-blur-sm rounded-full px-5 py-3 text-sm text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-pink-500/50 border border-white/10 transition pl-12" />
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-white/40">&#x1F50D;</span>
+                </div>
+                <div class="flex gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-hide">
+                    <button v-for="opt in filterOptions" :key="opt.value" @click="filterType = opt.value" class="px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-bold transition whitespace-nowrap border" :class="filterType === opt.value ? 'bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white border-transparent shadow-lg shadow-pink-500/30' : 'bg-white/5 text-white/60 hover:bg-white/10 border-white/10'">
+                        {{ opt.label }}
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESOURCES -->
+        <div v-for="(section, secIdx) in organizedSections" :key="secIdx" class="mb-6 slide-in">
+            <div class="section-header flex items-center gap-3">
+                <span class="text-2xl">{{ section.icon }}</span>
+                <h2 class="text-base md:text-lg font-extrabold text-white">{{ section.label }}</h2>
+                <span class="ml-auto text-xs bg-white/10 px-3 py-0.5 rounded-full font-bold text-white/60">{{ section.items.length }}</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
+                <div
+                    v-for="(item, idx) in section.items"
+                    :key="item.id || idx"
+                    class="glass-card rounded-2xl p-4 md:p-5 transition-all duration-300"
+                    :class="{
+                        'card-priority-high': item.priority === 'high' && !item.completed,
+                        'card-priority-medium': item.priority === 'medium' && !item.completed,
+                        'card-priority-low': item.priority === 'low' && !item.completed,
+                        'card-completed': item.completed
+                    }"
+                >
+                    <!-- Top row -->
+                    <div class="flex items-start justify-between mb-2">
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <div class="step-circle" :class="{ 'step-circle-done': item.completed }">
+                                <template v-if="item.completed">&#10003;</template>
+                                <template v-else>{{ item.step }}</template>
+                            </div>
+                            <span class="badge-type text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full whitespace-nowrap">
+                                {{ typeLabel(item.type) }}
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span v-if="item.completed" class="badge-completed text-[10px] px-2.5 py-1 rounded-full font-bold whitespace-nowrap">&#x2705; সম্পন্ন</span>
+                            <span v-if="item.password" class="badge-password text-[10px] px-2.5 py-1 rounded-full font-bold whitespace-nowrap">&#x1F511; পাসওয়ার্ড</span>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-base md:text-lg font-extrabold text-white leading-snug mb-1.5">{{ item.title }}</h3>
+
+                    <!-- Password -->
+                    <div v-if="item.password" class="text-xs font-mono bg-white/5 backdrop-blur-sm px-3 py-1 rounded-full inline-block mb-1.5 border border-white/10 text-yellow-400">{{ item.password }}</div>
+
+                    <!-- Priority Badge -->
+                    <div class="mb-2.5">
+                        <span v-if="item.priority === 'high'" class="badge-priority-high text-[10px] px-3 py-0.5 rounded-full font-bold">&#x1F534; প্রথমে পড়ুন</span>
+                        <span v-else-if="item.priority === 'medium'" class="badge-priority-medium text-[10px] px-3 py-0.5 rounded-full font-bold">&#x1F7E1; এরপর পড়ুন</span>
+                        <span v-else-if="item.priority === 'low'" class="badge-priority-low text-[10px] px-3 py-0.5 rounded-full font-bold">&#x1F535; পরে পড়ুন</span>
+                    </div>
+
+                    <!-- Score Section -->
+                    <div v-if="item.type === 'mocktest' || item.type === 'coupon'" class="score-box mb-2.5">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <div class="flex items-center gap-1">
+                                <span class="text-[10px] text-white/50 font-bold whitespace-nowrap">ভিডিও আগে:</span>
+                                <input type="number" min="0" max="100" :value="item.preScore" @input="saveScore(originalIndex(item), 'preScore', $event.target.value)" class="score-input" placeholder="-" />
+                                <span class="text-[10px] text-white-40">/100</span>
+                            </div>
+                            <span class="text-white/30 text-sm">&#8594;</span>
+                            <div class="flex items-center gap-1">
+                                <span class="text-[10px] text-white/50 font-bold whitespace-nowrap">ভিডিও পরে:</span>
+                                <input type="number" min="0" max="100" :value="item.postScore" @input="saveScore(originalIndex(item), 'postScore', $event.target.value)" class="score-input" placeholder="-" />
+                                <span class="text-[10px] text-white-40">/100</span>
+                            </div>
+                            <div v-if="item.preScore && item.postScore" class="text-[10px] font-bold px-2 py-0.5 rounded-full"
+                                :class="item.postScore > item.preScore ? 'text-green-400 bg-green-500/15' : item.postScore < item.preScore ? 'text-red-400 bg-red-500/15' : 'text-yellow-400 bg-yellow-500/15'"
+                            >
+                                {{ item.postScore > item.preScore ? '+ ' + (item.postScore - item.preScore) : item.postScore < item.preScore ? (item.postScore - item.preScore) : '0' }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Link -->
+                    <div class="relative group">
+                        <a :href="item.link" target="_blank" rel="noopener" class="link-truncate" :title="item.link">{{ item.link }}</a>
+                    </div>
+
+                    <!-- Note -->
+                    <p v-if="item.note" class="text-xs md:text-sm text-white/60 bg-white/5 backdrop-blur-sm rounded-xl px-3 py-2 mt-2 border border-white/5 flex items-start gap-1.5">
+                        <span>&#x1F4A1;</span>
+                        <span>{{ item.note }}</span>
+                    </p>
+
+                    <!-- Actions -->
+                    <div class="flex flex-wrap gap-1.5 mt-3.5 pt-3.5 border-t border-white/10">
+                        <button v-if="item.type === 'mocktest' || item.type === 'coupon'" @click="toggleComplete(originalIndex(item))" class="text-xs font-bold px-3 py-1.5 rounded-full transition border" :class="item.completed ? 'text-green-400 bg-green-500/15 border-green-500/30 hover:bg-green-500/25' : 'text-white/50 bg-white/5 border-white/10 hover:bg-white/10'">
+                            {{ item.completed ? '&#x2705; সম্পন্ন' : '&#x2610; সম্পন্ন করুন' }}
+                        </button>
+                        <button @click="openModal(originalIndex(item))" class="text-xs font-bold text-blue-400 bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-full transition border border-white/10">&#x270F;&#xFE0F; সম্পাদনা</button>
+                        <button @click="deleteItem(originalIndex(item))" class="text-xs font-bold text-red-400 bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-full transition border border-white/10">&#x1F5D1;&#xFE0F; মুছুন</button>
+                        <button @click="copyLink(item.link)" class="text-xs font-bold text-white/60 bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-full transition border border-white/10">&#x1F4CB; কপি</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div v-if="organizedSections.length === 0" class="text-center py-16 glass rounded-3xl">
+            <div class="text-6xl mb-4">&#x1F50D;</div>
+            <h3 class="text-2xl font-extrabold text-white">কিছু পাওয়া যায়নি</h3>
+            <p class="text-white/60 mt-1">সার্চ বা ফিল্টার পরিবর্তন করুন</p>
+            <button @click="resetToDefault" class="mt-4 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white px-6 py-2.5 rounded-full font-bold hover:shadow-xl transition shadow-pink-500/30">&#x1F504; ডিফল্ট রিস্টোর</button>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="mt-8 text-center text-xs text-white/30 border-t border-white/5 pt-6 mb-20">
+            JSON ডাটা সম্পাদনা করুন - লোকাল স্টোরেজে সংরক্ষিত
+        </div>
+    </div>
+
+    <!-- FAB -->
+    <button @click="openModal()" class="fab"><span>+</span></button>
+
+    <!-- BOTTOM NAV -->
+    <div class="bottom-nav">
+        <button @click="filterType = 'all'" :class="{ active: filterType === 'all' }">
+            <span class="icon">&#x1F4CC;</span><span>সব</span>
+        </button>
+        <button @click="filterType = 'mocktest'" :class="{ active: filterType === 'mocktest' }">
+            <span class="icon">&#x1F4DD;</span><span>মকটেস্ট</span>
+        </button>
+        <button @click="filterType = 'coupon'" :class="{ active: filterType === 'coupon' }">
+            <span class="icon">&#x1F39F;&#xFE0F;</span><span>কুপন</span>
+        </button>
+        <button @click="filterType = 'kanji'" :class="{ active: filterType === 'kanji' }">
+            <span class="icon">&#x1F4D6;</span><span>কাঞ্জি</span>
+        </button>
+        <button @click="filterType = 'class'" :class="{ active: filterType === 'class' }">
+            <span class="icon">&#x1F3A5;</span><span>ক্লাস</span>
+        </button>
+        <button @click="filterType = 'pdf'" :class="{ active: filterType === 'pdf' }">
+            <span class="icon">&#x1F4C4;</span><span>PDF</span>
+        </button>
+        <button @click="filterType = 'listening'" :class="{ active: filterType === 'listening' }">
+            <span class="icon">&#x1F3A7;</span><span>লিসেনিং</span>
+        </button>
+    </div>
+
+    <!-- MODAL -->
+    <div class="fixed inset-0 modal-overlay flex items-end sm:items-center justify-center z-50 px-3 sm:px-4 transition-all duration-300" :class="modalActive ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'" @click.self="closeModal">
+        <div class="modal-glass rounded-3xl max-w-lg w-full p-5 md:p-8 shadow-2xl transform transition-all duration-300 max-h-[90vh] overflow-y-auto" :class="modalActive ? 'translate-y-0' : 'translate-y-full sm:translate-y-4'">
+            <h2 class="text-2xl font-extrabold text-white mb-5 flex items-center gap-2">
+                <span>{{ editingIndex === null ? '+' : '✏' }}</span>
+                {{ editingIndex === null ? 'নতুন রিসোর্স' : 'সম্পাদনা করুন' }}
+            </h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold text-white/80 mb-1.5">টাইটেল *</label>
+                    <input v-model="form.title" placeholder="যেমন: MockTest- 16" class="input-glass w-full rounded-2xl px-4 py-3" />
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-white/80 mb-1.5">লিংক *</label>
+                    <input v-model="form.link" placeholder="https://docs.google.com/..." class="input-glass w-full rounded-2xl px-4 py-3" />
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-white/80 mb-1.5">পাসওয়ার্ড</label>
+                    <input v-model="form.password" placeholder="irodoribhai1" class="input-glass w-full rounded-2xl px-4 py-3" />
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-white/80 mb-1.5">টাইপ *</label>
+                    <select v-model="form.type" class="input-glass w-full rounded-2xl px-4 py-3">
+                        <option value="mocktest">মকটেস্ট</option>
+                        <option value="coupon">কুপন টেস্ট</option>
+                        <option value="kanji">কাঞ্জি টেস্ট</option>
+                        <option value="class">ক্লাস / প্লেলিস্ট</option>
+                        <option value="pdf">পিডিএফ</option>
+                        <option value="listening">লিসেনিং</option>
+                        <option value="other">অন্যান্য</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-white/80 mb-1.5">নোট</label>
+                    <textarea v-model="form.note" rows="2" placeholder="যেমন: সমাধান ক্লাস রেকর্ড..." class="input-glass w-full rounded-2xl px-4 py-3 resize-y"></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-white/80 mb-1.5">প্রায়োরিটি</label>
+                    <select v-model="form.priority" class="input-glass w-full rounded-2xl px-4 py-3">
+                        <option value="high">উচ্চ (প্রথমে পড়ুন)</option>
+                        <option value="medium">মাঝারি (এরপর পড়ুন)</option>
+                        <option value="low">নিম্ন (পরে পড়ুন)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex gap-3 mt-6 justify-end">
+                <button @click="closeModal" class="px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-bold transition border border-white/10">বাতিল</button>
+                <button @click="saveItem" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-fuchsia-500 to-pink-500 hover:shadow-xl text-white font-bold transition shadow-pink-500/30">সংরক্ষণ করুন</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+<script>
+(function createParticles() {
+    var container = document.getElementById('particles');
+    for (var i = 0; i < 50; i++) {
+        var particle = document.createElement('div');
+        particle.className = 'particle';
+        var size = Math.random() * 3 + 2;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+        particle.style.animationDelay = (Math.random() * 20) + 's';
+        particle.style.opacity = Math.random() * 0.5 + 0.1;
+        container.appendChild(particle);
+    }
+})();
+
+(function(){
+    var COUPON_TITLES = ['কুপন টেস্ট', 'Cupon Test -2', 'কুপন টেস্ট- ৩'];
+
+    var DEFAULT_DATA = [
+        { title: "MockTest- 1", link: "https://docs.google.com/forms/d/e/1FAIpQLSeuoXNg9F4uPLaDEwmIZCDI76GJHq540a5omZp9CQPF5lt4eg/viewform?usp=header", password: "irodoribhai1", type: "mocktest", note: "পাসওয়ার্ড: irodoribhai1", priority: "high" },
+        { title: "MockTest - 16", link: "https://docs.google.com/forms/d/e/1FAIpQLSeG-CHoQbBSwScJhHEeyN_biq_yjF9Cv_b4XAEe35Uhyz2DKQ/viewform", password: "irodoribhai1", type: "mocktest", note: "জুলাই মাসের পরীক্ষার্থীদের জন্য গুরুত্বপূর্ণ", priority: "high" },
+        { title: "Mocktest 2", link: "https://docs.google.com/forms/d/e/1FAIpQLSf45gxgU7F-uMKpdwgEnV46Mt9Qf6b4u8iPUuAO1nOAf8pj9Q/viewform", password: "irodoribhai1", type: "mocktest", note: "সন্ধ্যা ৭ টার আগে দিন", priority: "high" },
+        { title: "Mocktest-3", link: "https://forms.gle/SNp5tSn246wcHwBXA", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "কুপন টেস্ট", link: "https://docs.google.com/forms/d/e/1FAIpQLSdN1UVrFXCOjvtHzoail27CsSmTruft1Hnm7cvLBFuRyk7pSw/viewform?chromeless=1", password: "irodoribhai1", type: "coupon", note: "কুপন শেখানো হবে", priority: "high" },
+        { title: "Cupon Test -2", link: "https://docs.google.com/forms/d/e/1FAIpQLSfywu7DHCcC0KgdAuCZGkEbGJWth1z5KBHT3OpkysMl89OvzQ/viewform?usp=header", password: "irodoribhai1", type: "coupon", note: "", priority: "high" },
+        { title: "কুপন টেস্ট- ৩", link: "https://forms.gle/L7ocdQnfvmw6F7vK9", password: "", type: "coupon", note: "পাসওয়ার্ড লাগবে না", priority: "high" },
+        { title: "MockTest ৫", link: "https://docs.google.com/forms/d/e/1FAIpQLSf1zYojYJJDTUWF8yN-I9z7sQ7KdOPPu9ljvdvZRb1fkG4x6A/viewform?fbzx=-2002065225803381673", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "Mocktest- 6", link: "https://docs.google.com/forms/d/e/1FAIpQLScm35Ab90Cud3cTrtaDvVaDC9v-V_Np1iHjuWJb-AX7pSgWYg/viewform?fbzx=708441587961218692", password: "irodoribhaibatch-1", type: "mocktest", note: "", priority: "high" },
+        { title: "MockTest- 7", link: "https://docs.google.com/forms/d/e/1FAIpQLSfdvXFWN8VCQKD5mI50OvPMscU-BoKQZ8TADDtTK210_L1HSA/viewform", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "MockTest - 8", link: "https://forms.gle/S5Mv166j559qWaNq9", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "Mocktest- 9", link: "https://docs.google.com/forms/d/e/1FAIpQLSfzX-XK67B5X3pUTti7kao12uYK1pGFlGl6lC_AHSYI3d5p7w/viewform", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "মকটেষ্ট - ১০", link: "https://docs.google.com/forms/d/e/1FAIpQLSc_bYBIelIglRhMhSqQgaGGpdZ3XkRmG3MwUfPEFrwbxUBTKQ/viewform", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "মক টেস্ট- ১১", link: "https://docs.google.com/forms/d/e/1FAIpQLSdciIGaSf-PM3ytYhDfk4Sy_rElvZZ1i5OCPqU6gsfwCzW10Q/viewform", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "মকটেস্ট - ১২", link: "https://docs.google.com/forms/d/e/1FAIpQLSekkN1pgMVl5MmxXK3qXJB0ZJj5NHwCmqBA4iPmT20QUKoLLQ/viewform", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "MockTest 13", link: "https://docs.google.com/forms/d/e/1FAIpQLSdIIoCHvnnk-L_0LGkLCXsr4PRrbuq_wALb_0S_9-jwKyXsrQ/viewform", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "Mocktest- 14", link: "https://docs.google.com/forms/d/e/1FAIpQLSextnkNiUKHHeXhxqSoP0t9HDjusfHOZu-wASuR4PU_2I7WSQ/viewform", password: "irodoribhai1", type: "mocktest", note: "জুলাই মাসের পরীক্ষার্থীদের জন্য গুরুত্বপূর্ণ", priority: "high" },
+        { title: "Mocktest- 15", link: "https://docs.google.com/forms/d/e/1FAIpQLSfPo7tMqweOApzJFMqG0OLvGmQltTcW7m1sYerfj97Tzgp0yw/viewform", password: "irodoribhai1", type: "mocktest", note: "জুলাই মাসের পরীক্ষার্থীদের জন্য গুরুত্বপূর্ণ", priority: "high" },
+        { title: "Mocktest- 17", link: "https://docs.google.com/forms/d/e/1FAIpQLSeDaC-nZkFtRYPbFJvXN_8q5aKxVV5UV-siTVsiLqnlaFNNgQ/viewform?fbzx=-5261558040964941299", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "Mock test - 18", link: "https://docs.google.com/forms/d/e/1FAIpQLSeM5MKOxI3VrXA5xKZ2n72AQgBX-NTJ7XttilD0kgkCq3tv6w/viewform", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "Mocktest- 19", link: "https://docs.google.com/forms/d/e/1FAIpQLSei0IFIkaLQtpPKt_xEy_FGXkxaZ0PKNTckwrgLxXAWUhNm7A/viewform?fbzx=-6755156405477424518", password: "irodoribhai1", type: "mocktest", note: "", priority: "high" },
+        { title: "মকটেস্ট ২২", link: "https://22-mocktest-irodorivai.netlify.app/", password: "", type: "mocktest", note: "খুব গুরুত্বপূর্ণ, প্রতিটি প্রশ্ন মুখস্থ", priority: "high" },
+        { title: "মকটেস্ট ২৩", link: "https://23-mocktest-irodorivai.netlify.app/", password: "", type: "mocktest", note: "গতকালের মতো গুরুত্বপূর্ণ", priority: "high" },
+        { title: "মক টেস্ট ২৪", link: "https://24-mocktest-irodorivai.netlify.app/", password: "", type: "mocktest", note: "আপডেট", priority: "high" },
+        { title: "মকটেস্ট ২৫", link: "https://25-mocktest-irodorivai.netlify.app/", password: "", type: "mocktest", note: "লিসেনিং ব্রাউজার সমস্যা হলে মজিলা ব্যবহার করুন", priority: "high" },
+        { title: "মকটেস্ট ২৬", link: "https://26-mocktest-irodorivai.netlify.app/", password: "", type: "mocktest", note: "Mozilla Firefox ব্যবহার করুন", priority: "high" },
+        { title: "২৭ নাম্বার মক টেস্ট", link: "https://27-mocktest-irodorivai.netlify.app/", password: "", type: "mocktest", note: "", priority: "high" },
+        { title: "মকটেস্ট ২৮ (পরিবর্তিত)", link: "https://28-mocktest-irodorivai.netlify.app/", password: "", type: "mocktest", note: "গতকালের পরিবর্তিত", priority: "high" },
+        { title: "X, Y, Z Grammar Solution", link: "https://www.youtube.com/watch?v=nxNC1_0AqO4&list=PLvsHTr2JeNs3JUMsXVSsLPXiHl6LQy3bL", password: "", type: "class", note: "Playlist", priority: "medium" },
+        { title: "X,Y,Z Expression solution", link: "https://youtube.com/playlist?list=PLvsHTr2JeNs3dyZET_Lzdqef64y7hBJHj&si=dnjDPVSXbYRW8TGV", password: "", type: "class", note: "Playlist", priority: "medium" },
+        { title: "সকল মক্টেস্ট সমাধান ক্লাস", link: "https://youtube.com/playlist?list=PLvsHTr2JeNs1Dwgp209wGAQvvzpB2iRaz&si=XyEeFf2X5-zeOMs2", password: "", type: "class", note: "Playlist", priority: "medium" },
+        { title: "অধ্যায়ভিত্তিক মিনি মকটেস্ট", link: "https://youtube.com/playlist?list=PLvsHTr2JeNs1QHEAUCctnJj-7MO1Wunr3&si=k0felsGrPucv-j8y", password: "", type: "class", note: "ওয়েব সাইটের", priority: "medium" },
+        { title: "অধ্যায় ভিত্তিক সকল মকটেস্ট", link: "https://www.youtube.com/playlist?list=PLvsHTr2JeNs2jyIq2WCdbMDzQhp1hNXZN", password: "", type: "class", note: "গুরুত্বপূর্ণ", priority: "medium" },
+        { title: "মকটেস্ট ২৫ সমাধান ক্লাস", link: "https://youtu.be/UkjmoqxVnZQ", password: "", type: "class", note: "YouTube লিংক", priority: "medium" },
+        { title: "JFT এর জন্য সকল পিডিএফ", link: "https://drive.google.com/drive/folders/1fyrpcT0u2HrEWu9ldjW7d289_P84Cs-y", password: "", type: "pdf", note: "Google Drive", priority: "low" },
+        { title: "Irodori X, Y, Z all stories", link: "https://drive.google.com/drive/folders/1vH_y3eNOm8usW5hT-g0fjBR0oSqJLKv3", password: "", type: "pdf", note: "সব লেশন স্টোরি", priority: "low" },
+        { title: "Y book all kaiwa listening", link: "https://youtube.com/playlist?list=PLZZ5MrEgbcL34n8jBySIwtwk5FjWKSsAE&si=fPPxT4QCHdGn9X99", password: "", type: "listening", note: "", priority: "low" },
+        { title: "X book all kaiwa listening", link: "https://youtube.com/playlist?list=PLZZ5MrEgbcL01VcvUgxd_QQKHUYKfoMQU&si=aziJjVGBCqAZNlqo", password: "", type: "listening", note: "", priority: "low" },
+        { title: "Z book all kaiwa listening", link: "https://youtube.com/playlist?list=PLZZ5MrEgbcL3ub3X9sFv2wu2c4rreeNaa&si=Zch2PtuLpdya0DOD", password: "", type: "listening", note: "", priority: "low" },
+
+        { title: "X Grammar - 1", link: "https://1-x-grammar.netlify.app/", password: "", type: "class", note: "X বইয়ের গ্রামার", priority: "medium" },
+        { title: "X Grammar - 2", link: "https://2-x-grammar.netlify.app/", password: "", type: "class", note: "X বইয়ের গ্রামার", priority: "medium" },
+        { title: "Z Grammar - 1", link: "https://1-z-grammar-irodorivai.netlify.app/", password: "", type: "class", note: "Z বইয়ের গ্রামার", priority: "medium" },
+        { title: "Z Grammar - 2", link: "https://2-grammar-z-irodorvai.netlify.app/", password: "", type: "class", note: "Z বইয়ের গ্রামার", priority: "medium" },
+        { title: "Z Grammar - 3", link: "https://3-z-grammar.netlify.app/", password: "", type: "class", note: "Z বইয়ের গ্রামার", priority: "medium" },
+        { title: "Verb Forms - 10", link: "https://10-verb-forms-irodorivai.netlify.app/", password: "", type: "class", note: "ভার্ব ফর্মস", priority: "medium" },
+        { title: "Script - 3", link: "https://3-script-irodori-vai.netlify.app/", password: "", type: "class", note: "স্ক্রিপ্ট অনুশীলন", priority: "medium" },
+        { title: "Script Vocabulary", link: "https://update-scipt-vocabulary.netlify.app/", password: "", type: "class", note: "স্ক্রিপ্ট ভোকাবুলারি", priority: "medium" },
+        { title: "মিড নাইট সারপ্রাইজ টেস্ট", link: "https://update-short-test.netlify.app/", password: "", type: "mocktest", note: "১৬ টি গুরুত্বপূর্ণ প্রশ্ন। ভেরি ইম্পর্ট্যান্ট", priority: "high" },
+        { title: "Picture Test", link: "https://update-picture-test.netlify.app/", password: "", type: "mocktest", note: "ছবি দেখে উত্তর দিতে হবে", priority: "high" },
+        { title: "কাঞ্জি টেস্ট - ১", link: "https://irodoribhaikanjitheraphy1.netlify.app/", password: "", type: "kanji", note: "প্রথম কাঞ্জি টেস্ট", priority: "high" },
+        { title: "কাঞ্জি টেস্ট - ২", link: "https://irodoribhaiybook.netlify.app/", password: "", type: "kanji", note: "দ্বিতীয় কাঞ্জি টেস্ট", priority: "high" },
+        { title: "কাঞ্জি টেস্ট - ৩", link: "https://irodorivaizbookkanjitest.netlify.app/", password: "", type: "kanji", note: "তৃতীয় কাঞ্জি টেস্ট", priority: "high" },
+        { title: "কাঞ্জি টেস্ট - ৭", link: "https://7-kanji-test-irodorivai.netlify.app/", password: "", type: "kanji", note: "", priority: "high" },
+        { title: "কাঞ্জি টেস্ট - ৮", link: "https://8-kanji-irodorivai.netlify.app/", password: "", type: "kanji", note: "", priority: "high" }
+    ];
+
+    new Vue({
+        el: '#app',
+        data: {
+            resources: [],
+            searchQuery: '',
+            filterType: 'all',
+            filterOptions: [
+                { label: 'সব', value: 'all' },
+                { label: 'মকটেস্ট', value: 'mocktest' },
+                { label: 'কুপন টেস্ট', value: 'coupon' },
+                { label: 'কাঞ্জি', value: 'kanji' },
+                { label: 'ক্লাস', value: 'class' },
+                { label: 'পিডিএফ', value: 'pdf' },
+                { label: 'লিসেনিং', value: 'listening' }
+            ],
+            modalActive: false,
+            editingIndex: null,
+            form: { title: '', link: '', password: '', type: 'mocktest', note: '', priority: 'high' }
+        },
+        computed: {
+            completedCount() {
+                return this.resources.filter(r => r.completed && (r.type === 'mocktest' || r.type === 'coupon')).length;
+            },
+            totalCount() {
+                return this.resources.filter(r => r.type === 'mocktest' || r.type === 'coupon').length;
+            },
+            completionPercent() {
+                if (this.totalCount === 0) return 0;
+                return Math.round((this.completedCount / this.totalCount) * 100);
+            },
+            scoredCount() {
+                return this.resources.filter(r => (r.type === 'mocktest' || r.type === 'coupon') && r.postScore !== null && r.postScore !== undefined).length;
+            },
+            totalScore() {
+                var sum = 0;
+                this.resources.forEach(function(r) {
+                    if ((r.type === 'mocktest' || r.type === 'coupon') && r.postScore !== null && r.postScore !== undefined) {
+                        sum += r.postScore;
+                    }
+                });
+                return sum;
+            },
+            organizedSections() {
+                var filtered = this.resources;
+                var q = this.searchQuery.trim().toLowerCase();
+                if (this.filterType !== 'all') {
+                    filtered = filtered.filter(function(r) { return r.type === this.filterType; }.bind(this));
+                }
+                if (q) {
+                    filtered = filtered.filter(function(r) {
+                        return r.title.toLowerCase().indexOf(q) !== -1 ||
+                            r.link.toLowerCase().indexOf(q) !== -1 ||
+                            (r.note && r.note.toLowerCase().indexOf(q) !== -1) ||
+                            (r.password && r.password.toLowerCase().indexOf(q) !== -1);
+                    });
+                }
+                var priorityOrder = { high: 0, medium: 1, low: 2 };
+                var bengaliMap = { '\u09E6':0,'\u09E7':1,'\u09E8':2,'\u09E9':3,'\u09EA':4,'\u09EB':5,'\u09EC':6,'\u09ED':7,'\u09EE':8,'\u09EF':9 };
+                function extractMockNum(title) {
+                    var normalized = title.replace(/[\u09E6-\u09EF]/g, function(d) { return bengaliMap[d]; });
+                    var m = normalized.match(/(\d+)/);
+                    return m ? parseInt(m[1], 10) : 9999;
+                }
+                var sorted = filtered.slice().sort(function(a, b) {
+                    var pa = priorityOrder[a.priority] || 0;
+                    var pb = priorityOrder[b.priority] || 0;
+                    if (pa !== pb) return pa - pb;
+                    if (a.type === 'mocktest' && b.type === 'mocktest') {
+                        return extractMockNum(a.title) - extractMockNum(b.title);
+                    }
+                    if (a.type === 'coupon' && b.type === 'coupon') {
+                        return extractMockNum(a.title) - extractMockNum(b.title);
+                    }
+                    return 0;
+                });
+                sorted.forEach(function(item, idx) { item.step = idx + 1; });
+                var groups = {
+                    mocktest: { label: 'মকটেস্ট (সিরিয়াল অনুযায়ী)', icon: '\uD83D\uDCDD', items: [] },
+                    coupon: { label: 'কুপন টেস্ট', icon: '\uD83C\uDF9F\uFE0F', items: [] },
+                    kanji: { label: 'কাঞ্জি টেস্ট', icon: '\uD83D\uDCD6', items: [] },
+                    class: { label: 'সমাধান ক্লাস ও প্লেলিস্ট', icon: '\uD83C\uDFAC', items: [] },
+                    others: { label: 'পিডিএফ ও লিসেনিং', icon: '\uD83D\uDCDA', items: [] }
+                };
+                sorted.forEach(function(item) {
+                    if (item.type === 'mocktest') { groups.mocktest.items.push(item); }
+                    else if (item.type === 'coupon') { groups.coupon.items.push(item); }
+                    else if (item.type === 'kanji') { groups.kanji.items.push(item); }
+                    else if (item.type === 'class') { groups.class.items.push(item); }
+                    else { groups.others.items.push(item); }
+                });
+                var result = [];
+                if (groups.mocktest.items.length) result.push(groups.mocktest);
+                if (groups.coupon.items.length) result.push(groups.coupon);
+                if (groups.kanji.items.length) result.push(groups.kanji);
+                if (groups.class.items.length) result.push(groups.class);
+                if (groups.others.items.length) result.push(groups.others);
+                return result;
+            }
+        },
+        methods: {
+            typeLabel: function(type) {
+                var map = { 'mocktest': 'মকটেস্ট', 'coupon': 'কুপন টেস্ট', 'class': 'ক্লাস', 'pdf': 'পিডিএফ', 'listening': 'লিসেনিং', 'kanji': 'কাঞ্জি', 'other': 'অন্যান্য' };
+                return map[type] || type;
+            },
+            originalIndex: function(item) {
+                return this.resources.indexOf(item);
+            },
+            toggleComplete: function(index) {
+                var item = this.resources[index];
+                this.$set(item, 'completed', !item.completed);
+                this.saveToLocal();
+            },
+            saveScore: function(index, field, value) {
+                var item = this.resources[index];
+                var num = value === '' ? null : parseInt(value, 10);
+                if (isNaN(num)) num = null;
+                if (num !== null && num < 0) num = 0;
+                if (num !== null && num > 100) num = 100;
+                this.$set(item, field, num);
+                this.saveToLocal();
+            },
+            loadData: function() {
+                var self = this;
+                var stored = localStorage.getItem('irodori_resources');
+                if (stored) {
+                    try {
+                        var parsed = JSON.parse(stored);
+                        if (parsed && parsed.length > 0) {
+                            parsed.forEach(function(item) {
+                                if (!item.priority) item.priority = 'high';
+                                if (!item.hasOwnProperty('completed')) item.completed = false;
+                                if (!item.hasOwnProperty('preScore')) item.preScore = null;
+                                if (!item.hasOwnProperty('postScore')) item.postScore = null;
+                                if (item.type === 'mocktest' && COUPON_TITLES.indexOf(item.title) !== -1) {
+                                    item.type = 'coupon';
+                                }
+                            });
+                            var existingLinks = parsed.map(function(r) { return r.link; });
+                            var newItems = DEFAULT_DATA.filter(function(d) { return existingLinks.indexOf(d.link) === -1; });
+                            if (newItems.length > 0) {
+                                newItems.forEach(function(item) {
+                                    item.completed = false;
+                                    item.preScore = null;
+                                    item.postScore = null;
+                                    parsed.push(item);
+                                });
+                                localStorage.setItem('irodori_resources', JSON.stringify(parsed));
+                            }
+                            self.resources = parsed;
+                            return;
+                        }
+                    } catch (e) {}
+                }
+                self.resources = JSON.parse(JSON.stringify(DEFAULT_DATA));
+                self.saveToLocal();
+            },
+            saveToLocal: function() {
+                localStorage.setItem('irodori_resources', JSON.stringify(this.resources));
+            },
+            resetToDefault: function() {
+                if (confirm('সব ডাটা রিসেট করে ডিফল্ট লোড করবেন?')) {
+                    this.resources = JSON.parse(JSON.stringify(DEFAULT_DATA));
+                    this.saveToLocal();
+                    this.searchQuery = '';
+                    this.filterType = 'all';
+                }
+            },
+            openModal: function(index) {
+                if (index !== null && index !== undefined) {
+                    var item = this.resources[index];
+                    this.editingIndex = index;
+                    this.form = {
+                        title: item.title || '',
+                        link: item.link || '',
+                        password: item.password || '',
+                        type: item.type || 'mocktest',
+                        note: item.note || '',
+                        priority: item.priority || 'high'
+                    };
+                } else {
+                    this.editingIndex = null;
+                    this.form = { title: '', link: '', password: '', type: 'mocktest', note: '', priority: 'high' };
+                }
+                this.modalActive = true;
+            },
+            closeModal: function() {
+                this.modalActive = false;
+            },
+            saveItem: function() {
+                if (!this.form.title.trim() || !this.form.link.trim()) {
+                    alert('টাইটেল এবং লিংক অবশ্যই দিতে হবে');
+                    return;
+                }
+                var newItem = {
+                    title: this.form.title.trim(),
+                    link: this.form.link.trim(),
+                    password: this.form.password.trim(),
+                    type: this.form.type || 'mocktest',
+                    note: this.form.note.trim(),
+                    priority: this.form.priority || 'high',
+                    completed: false,
+                    preScore: null,
+                    postScore: null
+                };
+                if (this.editingIndex !== null) {
+                    var existing = this.resources[this.editingIndex];
+                    newItem.completed = existing.completed || false;
+                    newItem.preScore = existing.preScore || null;
+                    newItem.postScore = existing.postScore || null;
+                    this.resources.splice(this.editingIndex, 1, newItem);
+                } else {
+                    this.resources.push(newItem);
+                }
+                this.saveToLocal();
+                this.closeModal();
+            },
+            deleteItem: function(index) {
+                if (confirm('এই রিসোর্সটি মুছবেন?')) {
+                    this.resources.splice(index, 1);
+                    this.saveToLocal();
+                }
+            },
+            copyLink: function(link) {
+                navigator.clipboard.writeText(link).then(function() {
+                    alert('লিংক কপি হয়েছে!');
+                }).catch(function() {
+                    var textarea = document.createElement('textarea');
+                    textarea.value = link;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    alert('লিংক কপি হয়েছে!');
+                });
+            }
+        },
+        mounted: function() {
+            this.loadData();
+        }
+    });
+})();
+</script>
+</body>
+</html>

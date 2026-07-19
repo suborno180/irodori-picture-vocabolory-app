@@ -6,13 +6,11 @@ import { generateQuiz, generateQuizByLessons, getBookList, getLessons, getItemsB
 import QuizCard from "./QuizCard";
 import Pagination from "./Pagination";
 import ScoreBoard from "./ScoreBoard";
-import { AppMode } from "@/app/page";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface QuizProps {
   bookSlug: BookSlug;
-  currentMode: AppMode;
-  onHome: () => void;
-  onSwitchMode: (mode: AppMode, book: BookSlug) => void;
 }
 
 type QuizPhase = "setup" | "quiz" | "finished";
@@ -20,7 +18,7 @@ type ExamType = "instant" | "endReview";
 
 const QUESTIONS_PER_PAGE = 5;
 
-export default function Quiz({ bookSlug, currentMode, onHome, onSwitchMode }: QuizProps) {
+export default function Quiz({ bookSlug }: QuizProps) {
   const [phase, setPhase] = useState<QuizPhase>("setup");
   const [selectedLessons, setSelectedLessons] = useState<number[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -33,6 +31,7 @@ export default function Quiz({ bookSlug, currentMode, onHome, onSwitchMode }: Qu
   const [submittedByTimeout, setSubmittedByTimeout] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const router = useRouter();
 
   const lessons = useMemo(() => getLessons(bookSlug), [bookSlug]);
   const books = getBookList();
@@ -183,10 +182,10 @@ export default function Quiz({ bookSlug, currentMode, onHome, onSwitchMode }: Qu
         <header className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-700/50">
           <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
             <div className="flex items-center justify-between">
-              <button onClick={onHome} className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors min-h-[44px] min-w-[44px] justify-center -ml-2" aria-label="Go back to book selection">
+              <Link href="/exam" className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors min-h-[44px] min-w-[44px] justify-center -ml-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
                 <span className="hidden sm:inline">Back</span>
-              </button>
+              </Link>
               <h1 className="text-lg sm:text-2xl font-bold text-center truncate px-2">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-violet-400">{config?.title}</span>
                 <span className="hidden sm:inline text-slate-400 font-normal text-base ml-2">- Exam Setup</span>
@@ -296,9 +295,7 @@ export default function Quiz({ bookSlug, currentMode, onHome, onSwitchMode }: Qu
         answers={answers}
         questions={questions}
         onRestart={handleRestart}
-        onHome={onHome}
         bookSlug={bookSlug}
-        onSwitchMode={onSwitchMode}
         onBackToSetup={handleBackToSetup}
         timeLimit={timeLimit}
         submittedByTimeout={submittedByTimeout}
@@ -349,9 +346,9 @@ export default function Quiz({ bookSlug, currentMode, onHome, onSwitchMode }: Qu
               {menuOpen && (
                 <div className="absolute right-0 top-full mt-2 w-64 bg-slate-800 border border-slate-700/50 rounded-xl shadow-2xl shadow-black/50 overflow-hidden z-50" role="menu">
                   <div className="p-2">
-                    <button onClick={() => { onSwitchMode("read", bookSlug); setMenuOpen(false); }} className="w-full text-left px-3 py-2.5 rounded-lg text-sm text-slate-300 hover:bg-green-500/20 hover:text-green-300 transition-colors flex items-center gap-3 min-h-[44px]" role="menuitem">📖 Read Mode</button>
+                    <Link href={`/read/${bookSlug}`} onClick={() => setMenuOpen(false)} className="w-full text-left px-3 py-2.5 rounded-lg text-sm text-slate-300 hover:bg-green-500/20 hover:text-green-300 transition-colors flex items-center gap-3 min-h-[44px]" role="menuitem">📖 Read Mode</Link>
                     <button onClick={() => { handleBackToSetup(); setMenuOpen(false); }} className="w-full text-left px-3 py-2.5 rounded-lg text-sm text-slate-400 hover:bg-slate-700/30 hover:text-white transition-colors flex items-center gap-3 min-h-[44px]" role="menuitem">🔄 Change Lessons</button>
-                    <button onClick={() => { onHome(); setMenuOpen(false); }} className="w-full text-left px-3 py-2.5 rounded-lg text-sm text-slate-400 hover:bg-slate-700/30 hover:text-white transition-colors flex items-center gap-3 min-h-[44px]" role="menuitem">🏠 Home</button>
+                    <Link href="/" onClick={() => setMenuOpen(false)} className="w-full text-left px-3 py-2.5 rounded-lg text-sm text-slate-400 hover:bg-slate-700/30 hover:text-white transition-colors flex items-center gap-3 min-h-[44px]" role="menuitem">🏠 Home</Link>
                   </div>
                 </div>
               )}

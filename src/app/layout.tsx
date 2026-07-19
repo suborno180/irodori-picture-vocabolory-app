@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Irodori Vocab Quiz",
-  description: "Practice Japanese vocabulary from Irodori textbooks with image-based MCQ quizzes",
+  title: "ইরোদোরি ভাই - JFT প্রস্তুতি",
+  description: "JFT পরীক্ষার প্রস্তুতি - মকটেস্ট, কুপন, কাঞ্জি ও সকল রিসোর্স",
 };
 
 export default function RootLayout({

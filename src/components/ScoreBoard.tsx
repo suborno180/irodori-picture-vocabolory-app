@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { BookSlug, QuizQuestion } from "@/lib/types";
-import { AppMode } from "@/app/page";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ScoreBoardProps {
   score: number;
@@ -11,9 +11,7 @@ interface ScoreBoardProps {
   answers: Record<string, string>;
   questions: QuizQuestion[];
   onRestart: () => void;
-  onHome: () => void;
   bookSlug: BookSlug;
-  onSwitchMode: (mode: AppMode, book: BookSlug) => void;
   onBackToSetup: () => void;
   timeLimit: number;
   submittedByTimeout: boolean;
@@ -25,9 +23,7 @@ export default function ScoreBoard({
   answers,
   questions,
   onRestart,
-  onHome,
   bookSlug,
-  onSwitchMode,
   onBackToSetup,
   timeLimit,
   submittedByTimeout,
@@ -87,13 +83,13 @@ export default function ScoreBoard({
 
           <div className="flex flex-col sm:flex-row gap-3 mb-4">
             <button onClick={onRestart} className="flex-1 px-6 py-3 bg-gradient-to-r from-pink-500 to-violet-500 text-white rounded-xl font-semibold hover:from-pink-600 hover:to-violet-600 transition-all duration-300 min-h-[48px]">Try Again</button>
-            <button onClick={onHome} className="flex-1 px-6 py-3 border-2 border-slate-600/50 text-slate-300 rounded-xl font-semibold hover:border-purple-500/50 hover:bg-slate-700/50 transition-all duration-300 min-h-[48px]">Home</button>
+            <Link href="/" className="flex-1 px-6 py-3 border-2 border-slate-600/50 text-slate-300 rounded-xl font-semibold hover:border-purple-500/50 hover:bg-slate-700/50 transition-all duration-300 min-h-[48px] flex items-center justify-center">Home</Link>
           </div>
 
           <div className="pt-4 border-t border-slate-700/50">
             <div className="flex flex-col sm:flex-row gap-2">
               <button onClick={onBackToSetup} className="flex-1 px-4 py-2.5 rounded-xl text-sm font-medium bg-pink-500/10 text-pink-400 border border-pink-500/20 hover:bg-pink-500/20 transition-colors min-h-[44px]">🔄 Change Lessons</button>
-              <button onClick={() => onSwitchMode("read", bookSlug)} className="flex-1 px-4 py-2.5 rounded-xl text-sm font-medium bg-green-500/10 text-green-400 border border-green-500/20 hover:bg-green-500/20 transition-colors min-h-[44px]">📖 Read Mode</button>
+              <Link href={`/read/${bookSlug}`} className="flex-1 px-4 py-2.5 rounded-xl text-sm font-medium bg-green-500/10 text-green-400 border border-green-500/20 hover:bg-green-500/20 transition-colors min-h-[44px] flex items-center justify-center">📖 Read Mode</Link>
             </div>
           </div>
         </div>
