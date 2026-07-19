@@ -4,7 +4,7 @@ import { useState, useMemo, useRef, useEffect } from "react";
 import { BookSlug, BOOKS } from "@/lib/types";
 import { getBookData, getLessons, getItemsByLesson, getBookList } from "@/lib/quiz";
 import VocabCard from "./VocabCard";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 interface ReadModeProps {
@@ -12,8 +12,12 @@ interface ReadModeProps {
 }
 
 export default function ReadMode({ bookSlug }: ReadModeProps) {
-  const [selectedLesson, setSelectedLesson] = useState<number | null>(null);
-  const [showAll, setShowAll] = useState(true);
+  const searchParams = useSearchParams();
+  const initialLesson = searchParams.get("lesson");
+  const [selectedLesson, setSelectedLesson] = useState<number | null>(
+    initialLesson ? parseInt(initialLesson, 10) : null
+  );
+  const [showAll, setShowAll] = useState(!initialLesson);
   const [menuOpen, setMenuOpen] = useState(false);
   const lessonScrollRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -34,9 +38,11 @@ export default function ReadMode({ bookSlug }: ReadModeProps) {
     if (lesson === null) {
       setShowAll(true);
       setSelectedLesson(null);
+      router.replace(`/read/${bookSlug}`);
     } else {
       setSelectedLesson(lesson);
       setShowAll(false);
+      router.replace(`/read/${bookSlug}?lesson=${lesson}`);
     }
   };
 

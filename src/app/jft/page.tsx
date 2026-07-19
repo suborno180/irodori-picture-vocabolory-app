@@ -391,7 +391,7 @@ export default function JftPage() {
                 return (
                   <div
                     key={item.id}
-                    className="rounded-2xl p-4 md:p-5 transition-all duration-300 hover:-translate-y-1.5"
+                    className="rounded-2xl p-4 md:p-5 transition-all duration-300"
                     style={{
                       background: "rgba(255,255,255,0.08)",
                       backdropFilter: "blur(16px)",
