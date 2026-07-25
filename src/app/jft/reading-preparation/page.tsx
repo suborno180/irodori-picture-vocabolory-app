@@ -98,8 +98,23 @@ export default function JftReadingPreparationPage() {
 
         await audio.play();
       } catch {
-        setSpeakingId(null);
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "bn-BD";
+        utterance.rate = 0.8;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        const voices = window.speechSynthesis.getVoices();
+        const bnVoice = voices.find((v) => v.lang.startsWith("bn"))
+          || voices.find((v) => v.name.toLowerCase().includes("bengali"))
+          || voices.find((v) => v.lang.startsWith("hi"));
+        if (bnVoice) utterance.voice = bnVoice;
+
+        utterance.onend = () => setSpeakingId(null);
+        utterance.onerror = () => setSpeakingId(null);
+
         setBanglaLoading(false);
+        window.speechSynthesis.speak(utterance);
       }
       return;
     }
