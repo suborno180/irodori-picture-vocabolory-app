@@ -34,7 +34,7 @@ export default function JftReadingPreparationPage() {
   const banglaAudioRef = useRef<HTMLAudioElement | null>(null);
   const [banglaLoading, setBanglaLoading] = useState(false);
 
-  const JFT_PASSWORD = "irodori2025";
+  const JFT_PASSWORD = "suborno.dev";
 
   useEffect(() => {
     return () => {
@@ -246,8 +246,14 @@ export default function JftReadingPreparationPage() {
   };
 
   useEffect(() => {
-    const stored = localStorage.getItem("jft_auth");
-    if (stored === "true") setAuthenticated(true);
+    const storedVersion = localStorage.getItem("jft_auth_version");
+    if (storedVersion !== JFT_PASSWORD) {
+      localStorage.removeItem("jft_auth");
+      localStorage.setItem("jft_auth_version", JFT_PASSWORD);
+    } else {
+      const stored = localStorage.getItem("jft_auth");
+      if (stored === "true") setAuthenticated(true);
+    }
     const savedAnswers = localStorage.getItem("jft_reading_answers");
     if (savedAnswers) {
       try {
