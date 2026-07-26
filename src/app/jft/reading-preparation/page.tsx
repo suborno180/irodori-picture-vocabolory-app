@@ -291,7 +291,7 @@ export default function JftReadingPreparationPage() {
 
     const handleMouseDown = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (!target.closest(".reading-text-area")) {
+      if (!target.closest(".reading-text-area") && !target.closest(".selection-play-btn")) {
         setSelectedText(null);
       }
     };
@@ -1239,7 +1239,7 @@ export default function JftReadingPreparationPage() {
               onClick={() => setSelectedText(null)}
             />
             <div
-              className="fixed z-50"
+              className="selection-play-btn fixed z-50"
               style={{
                 left: `${Math.min(Math.max(selectedText.x, 40), window.innerWidth - 40)}px`,
                 top: `${Math.max(selectedText.y - 50, 10)}px`,
