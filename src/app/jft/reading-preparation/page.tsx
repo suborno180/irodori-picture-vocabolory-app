@@ -694,476 +694,213 @@ export default function JftReadingPreparationPage() {
           </div>
         )}
 
-        {/* All Paragraphs */}
-        {!loading && paragraphs.map((paragraph) => {
-          const score = getParagraphScore(paragraph);
-          return (
-            <div key={paragraph.id} className="mb-8">
-              {/* Paragraph Header */}
-              <div
-                className="rounded-2xl p-5 mb-4"
-                style={{
-                  background: paragraph.isImportent ? "rgba(245,158,11,0.08)" : "rgba(255,255,255,0.08)",
-                  backdropFilter: "blur(16px)",
-                  border: paragraph.isImportent
-                    ? "2px solid rgba(245,158,11,0.4)"
-                    : "1px solid rgba(255,255,255,0.1)",
-                }}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span
-                    className="text-xs font-bold px-3 py-1 rounded-full"
-                    style={{
-                      background: "rgba(255,255,255,0.1)",
-                      color: "rgba(255,255,255,0.7)",
-                    }}
-                  >
-                    প্যারাগ্রাফ #{paragraph.id}
-                  </span>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => toggleImportant(paragraph.id, paragraph.isImportent)}
-                      className="text-xs font-bold px-3 py-1 rounded-full transition-all"
-                      style={{
-                        background: paragraph.isImportent
-                          ? "rgba(245,158,11,0.2)"
-                          : "rgba(255,255,255,0.1)",
-                        color: paragraph.isImportent ? "#fbbf24" : "rgba(255,255,255,0.7)",
-                        border: paragraph.isImportent
-                          ? "1px solid rgba(245,158,11,0.4)"
-                          : "1px solid rgba(255,255,255,0.1)",
-                      }}
-                    >
-                      {paragraph.isImportent ? "⭐ গুরুত্বপূর্ণ" : "☆ গুরুত্বপূর্ণ করুন"}
-                    </button>
-                    <span
-                      className="text-xs font-bold px-3 py-1 rounded-full"
-                      style={{
-                        background:
-                          score.correct === score.total && score.total > 0
-                            ? "rgba(34,197,94,0.2)"
-                            : "rgba(255,255,255,0.1)",
-                        color:
-                          score.correct === score.total && score.total > 0
-                            ? "#4ade80"
-                            : "rgba(255,255,255,0.7)",
-                      }}
-                    >
-                      {score.correct}/{score.total} সঠিক
-                    </span>
-                  </div>
-                </div>
-                <h2 className="text-xl font-extrabold text-white mb-1">
-                  {paragraph.title}
-                </h2>
-                <p className="text-base text-white/60 mb-1">
-                  {paragraph.title_bangla}
-                </p>
-                <p className="text-sm text-white/40">
-                  {paragraph.title_english}
-                </p>
-              </div>
-
-              {/* Japanese Text */}
-              <div
-                className="rounded-2xl p-5 mb-4"
-                style={{
-                  background: "rgba(255,255,255,0.06)",
-                  backdropFilter: "blur(16px)",
-                  border: "1px solid rgba(255,255,255,0.1)",
-                }}
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-lg">🇯🇵</span>
-                  <h3 className="text-base font-bold text-white">
-                    {showFurigana ? "ফুরিগানা (Furigana)" : "কাঞ্জি সহ পাঠ্য"}
-                  </h3>
-                  {!showFurigana && speakingId !== paragraph.id && (
-                    <span className="text-xs text-purple-300/60 ml-auto">
-                      👆 কাঞ্জি শব্দে ক্লিক করুন
-                    </span>
-                  )}
-                  {speakingId === paragraph.id && (
-                    <span className="text-xs text-yellow-300/80 ml-auto animate-pulse">
-                      🔊 শুনছেন...
-                    </span>
-                  )}
-                  <div className="ml-auto flex items-center gap-2">
-                    <select
-                      value={speechRate}
-                      onChange={(e) => setSpeechRate(Number(e.target.value))}
-                      className="text-xs px-2 py-1 rounded-lg focus:outline-none"
-                      style={{
-                        background: "rgba(30,27,75,0.9)",
-                        border: "1px solid rgba(255,255,255,0.2)",
-                        color: "white",
-                      }}
-                    >
-                      <option value={0.5} style={{ color: "white", background: "#1e1b4b" }}>0.5x</option>
-                      <option value={0.6} style={{ color: "white", background: "#1e1b4b" }}>0.6x</option>
-                      <option value={0.7} style={{ color: "white", background: "#1e1b4b" }}>0.7x</option>
-                      <option value={0.8} style={{ color: "white", background: "#1e1b4b" }}>0.8x</option>
-                      <option value={1} style={{ color: "white", background: "#1e1b4b" }}>1x</option>
-                      <option value={1.2} style={{ color: "white", background: "#1e1b4b" }}>1.2x</option>
-                    </select>
-                    <button
-                      onClick={() =>
-                        speakText(
-                          showFurigana ? paragraph.reading.furigana : paragraph.reading.with_kanji,
-                          paragraph.id
-                        )
-                      }
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all"
-                      style={{
-                        background:
-                          speakingId === paragraph.id
-                            ? "linear-gradient(135deg, #ef4444, #dc2626)"
-                            : "linear-gradient(135deg, #22c55e, #16a34a)",
-                        color: "white",
-                        boxShadow:
-                          speakingId === paragraph.id
-                            ? "0 4px 16px rgba(239,68,68,0.4)"
-                            : "0 4px 16px rgba(34,197,94,0.3)",
-                      }}
-                    >
-                      {speakingId === paragraph.id ? (
-                        <>
-                          <span className="w-1.5 h-3 bg-white rounded-sm animate-pulse" />
-                          বন্ধ করুন
-                        </>
-                      ) : (
-                        <>
-                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
-                          </svg>
-                          শুনুন
-                        </>
-                      )}
-                    </button>
-                  </div>
-                </div>
-                {showFurigana ? (
-                  <p
-                    className="reading-text-area text-lg leading-relaxed text-white/90"
-                    style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
-                  >
-                    {paragraph.reading.furigana}
-                  </p>
-                ) : speakingId === paragraph.id ? (
-                  <p
-                    className="reading-text-area text-lg leading-relaxed"
-                    style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
-                  >
-                    {spokenWords.map((word, i) => (
-                      <span
-                        key={i}
-                        className="inline-block transition-all duration-300"
-                        style={{
-                          color: i === currentWordIndex ? "#fbbf24" : i < currentWordIndex ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.9)",
-                          fontWeight: i === currentWordIndex ? "900" : "400",
-                          textShadow: i === currentWordIndex ? "0 0 20px rgba(251,191,36,0.6), 0 0 40px rgba(251,191,36,0.3)" : "none",
-                          padding: "2px 4px",
-                          borderRadius: "4px",
-                          background: i === currentWordIndex ? "rgba(251,191,36,0.15)" : "transparent",
-                        }}
-                      >
-                        {word}
-                      </span>
-                    ))}
-                  </p>
-                ) : (
-                  <p
-                    className="reading-text-area text-lg leading-relaxed text-white/90"
-                    style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
-                  >
-                    {parseTextWithKanji(paragraph.reading.with_kanji, paragraph.kanji_list).map((segment, i) => {
-                      if (segment.isKanjiWord) {
-                        return (
-                          <span
-                            key={i}
-                            onClick={(e) => handleKanjiClick(segment.reading!, segment.meaning!, segment.text, e)}
-                            className="cursor-pointer px-1 py-0.5 rounded-lg transition-all hover:bg-purple-500/30 inline-block"
-                            style={{
-                              background: "rgba(139,92,246,0.15)",
-                              borderBottom: "2px solid rgba(139,92,246,0.4)",
-                            }}
-                          >
-                            {segment.text}
-                          </span>
-                        );
-                      }
-                      return <span key={i}>{segment.text}</span>;
-                    })}
-                  </p>
-                )}
-              </div>
-
-              {/* Bangla Translation */}
-              <div
-                className="rounded-2xl p-5 mb-4"
-                style={{
-                  background: "rgba(255,255,255,0.06)",
-                  backdropFilter: "blur(16px)",
-                  border: "1px solid rgba(255,255,255,0.1)",
-                }}
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-lg">🇧🇩</span>
-                  <h3 className="text-base font-bold text-white">
-                    বাংলা অনুবাদ
-                  </h3>
+        {/* Paragraph Cards */}
+        {!loading && selectedParagraph === null && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {paragraphs.map((paragraph) => {
+              const score = getParagraphScore(paragraph);
+              const hasAnswers = Object.keys(answers[paragraph.id] || {}).length > 0;
+              const isCompleted = hasAnswers && score.correct === score.total;
+              return (
+                <div key={paragraph.id} className="relative">
                   <button
-                    onClick={() => speakText(paragraph.reading.bangla, paragraph.id + 100, "bn-BD")}
-                    disabled={banglaLoading}
-                    className="ml-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all"
+                    onClick={() => setSelectedParagraph(paragraph.id)}
+                    className="w-full text-left rounded-2xl p-4 transition-all duration-300"
                     style={{
-                      background:
-                        speakingId === paragraph.id + 100
-                          ? "linear-gradient(135deg, #ef4444, #dc2626)"
-                          : banglaLoading
-                          ? "linear-gradient(135deg, #f59e0b, #d97706)"
-                          : "linear-gradient(135deg, #3b82f6, #2563eb)",
-                      color: "white",
-                      boxShadow:
-                        speakingId === paragraph.id + 100
-                          ? "0 4px 16px rgba(239,68,68,0.4)"
-                          : banglaLoading
-                          ? "0 4px 16px rgba(245,158,11,0.4)"
-                          : "0 4px 16px rgba(59,130,246,0.3)",
-                      opacity: banglaLoading ? 0.8 : 1,
+                      background: "rgba(255,255,255,0.08)",
+                      backdropFilter: "blur(16px)",
+                      border: paragraph.isImportent
+                        ? "2px solid rgba(245,158,11,0.5)"
+                        : isCompleted
+                        ? "2px solid rgba(34,197,94,0.4)"
+                        : hasAnswers
+                        ? "2px solid rgba(251,191,36,0.4)"
+                        : "2px solid rgba(255,255,255,0.1)",
+                      boxShadow: paragraph.isImportent
+                        ? "0 8px 32px rgba(245,158,11,0.15)"
+                        : "0 8px 32px rgba(0,0,0,0.25)",
                     }}
                   >
-                    {banglaLoading ? (
-                      <>
-                        <svg className="w-3.5 h-3.5 animate-spin" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                        </svg>
-                        লোড হচ্ছে...
-                      </>
-                    ) : speakingId === paragraph.id + 100 ? (
-                      <>
-                        <span className="w-1.5 h-3 bg-white rounded-sm animate-pulse" />
-                        বন্ধ করুন
-                      </>
-                    ) : (
-                      <>
-                        <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
-                        </svg>
-                        শুনুন
-                      </>
-                    )}
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: "rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.7)" }}>
+                        #{paragraph.id}
+                      </span>
+                      {isCompleted && (
+                        <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: "rgba(34,197,94,0.2)", color: "#4ade80" }}>
+                          ✅ সম্পন্ন
+                        </span>
+                      )}
+                      {hasAnswers && !isCompleted && (
+                        <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: "rgba(251,191,36,0.2)", color: "#fcd34d" }}>
+                          {score.correct}/{score.total}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-base font-bold text-white mb-1">{paragraph.title}</h3>
+                    <p className="text-sm text-white/60">{paragraph.title_bangla}</p>
+                    <p className="text-xs text-white/40 mt-1">{paragraph.title_english}</p>
+                  </button>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); toggleImportant(paragraph.id, paragraph.isImportent); }}
+                    className="absolute top-2 right-2 w-8 h-8 rounded-full flex items-center justify-center text-sm transition-all z-10"
+                    style={{
+                      background: paragraph.isImportent ? "rgba(245,158,11,0.3)" : "rgba(255,255,255,0.08)",
+                      border: paragraph.isImportent ? "1px solid rgba(245,158,11,0.5)" : "1px solid rgba(255,255,255,0.1)",
+                    }}
+                  >
+                    {paragraph.isImportent ? "⭐" : "☆"}
                   </button>
                 </div>
-                <p className="text-base leading-relaxed text-white/80">
-                  {paragraph.reading.bangla}
-                </p>
-              </div>
+              );
+            })}
+          </div>
+        )}
 
-              {/* Questions */}
-              <div className="mb-4">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-lg">❓</span>
-                  <h3 className="text-base font-bold text-white">
-                    প্রশ্নোত্তর
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  {paragraph.questions.map((question, qIndex) => {
-                    const currentAnswer =
-                      answers[paragraph.id]?.[question.id] || null;
-                    const isCorrect =
-                      currentAnswer === question.correct_answer;
-                    const showExplanation =
-                      showExplanations[
-                        `${paragraph.id}-${question.id}`
-                      ];
-
-                    return (
-                      <div
-                        key={question.id}
-                        className="rounded-2xl p-5"
-                        style={{
-                          background: "rgba(255,255,255,0.06)",
-                          backdropFilter: "blur(16px)",
-                          border:
-                            currentAnswer !== null
-                              ? isCorrect
-                                ? "2px solid rgba(34,197,94,0.4)"
-                                : "2px solid rgba(239,68,68,0.4)"
-                              : "1px solid rgba(255,255,255,0.1)",
-                        }}
-                      >
-                        <div className="flex items-start gap-3 mb-3">
-                          <span
-                            className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0"
-                            style={{
-                              background:
-                                "linear-gradient(135deg, #f093fb, #f5576c)",
-                            }}
-                          >
-                            {qIndex + 1}
-                          </span>
-                          <div>
-                            <p className="text-base font-bold text-white">
-                              {question.question}
-                            </p>
-                            <p className="text-sm text-white/50 mt-0.5">
-                              {question.question_bangla}
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
-                          {question.options.map((option) => {
-                            const isSelected = currentAnswer === option;
-                            const isOptionCorrect =
-                              option === question.correct_answer;
-                            return (
-                              <button
-                                key={option}
-                                onClick={() =>
-                                  handleAnswer(
-                                    paragraph.id,
-                                    question.id,
-                                    option
-                                  )
-                                }
-                                className="text-left px-4 py-3 rounded-xl text-sm font-medium transition-all"
-                                style={{
-                                  background: isSelected
-                                    ? isOptionCorrect
-                                      ? "rgba(34,197,94,0.2)"
-                                      : "rgba(239,68,68,0.2)"
-                                    : isOptionCorrect &&
-                                      currentAnswer !== null
-                                    ? "rgba(34,197,94,0.1)"
-                                    : "rgba(255,255,255,0.05)",
-                                  border: isSelected
-                                    ? isOptionCorrect
-                                      ? "1px solid rgba(34,197,94,0.4)"
-                                      : "1px solid rgba(239,68,68,0.4)"
-                                    : isOptionCorrect &&
-                                      currentAnswer !== null
-                                    ? "1px solid rgba(34,197,94,0.3)"
-                                    : "1px solid rgba(255,255,255,0.1)",
-                                  color: isSelected
-                                    ? isOptionCorrect
-                                      ? "#4ade80"
-                                      : "#f87171"
-                                    : isOptionCorrect &&
-                                      currentAnswer !== null
-                                    ? "#4ade80"
-                                    : "rgba(255,255,255,0.7)",
-                                }}
-                              >
-                                {option}
-                              </button>
-                            );
-                          })}
-                        </div>
-
-                        <button
-                          onClick={() =>
-                            toggleExplanation(
-                              `${paragraph.id}-${question.id}`
-                            )
-                          }
-                          className="text-xs text-white/50 hover:text-white/80 transition flex items-center gap-1"
-                        >
-                          <span>
-                            {showExplanation ? "ভাষ্ট" : "ব্যাখ্যা দেখুন"}
-                          </span>
-                          <svg
-                            className={`w-3 h-3 transition-transform ${
-                              showExplanation ? "rotate-180" : ""
-                            }`}
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M19 9l-7 7-7-7"
-                            />
-                          </svg>
-                        </button>
-
-                        {showExplanation && (
-                          <div
-                            className="mt-3 p-3 rounded-xl text-sm text-white/70"
-                            style={{
-                              background: "rgba(255,255,255,0.05)",
-                              border: "1px solid rgba(255,255,255,0.08)",
-                            }}
-                          >
-                            💡 {question.explanation}
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Kanji List */}
-              <div
-                className="rounded-2xl p-5"
-                style={{
-                  background: "rgba(255,255,255,0.06)",
-                  backdropFilter: "blur(16px)",
-                  border: "1px solid rgba(255,255,255,0.1)",
-                }}
+        {/* Single Paragraph Expanded */}
+        {!loading && selectedParagraph !== null && (() => {
+          const paragraph = paragraphs.find(p => p.id === selectedParagraph);
+          if (!paragraph) return null;
+          const score = getParagraphScore(paragraph);
+          return (
+            <div>
+              <button
+                onClick={() => setSelectedParagraph(null)}
+                className="flex items-center gap-2 text-white/60 hover:text-white mb-4 transition"
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-lg">📝</span>
-                  <h3 className="text-base font-bold text-white">
-                    কাঞ্জি তালিকা
-                  </h3>
-                  <span className="text-xs text-white/40 ml-auto">
-                    {paragraph.kanji_list.length}টি
-                  </span>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                  {paragraph.kanji_list.map((kanji) => {
-                    const isKnown =
-                      kanjiKnown[paragraph.id]?.[kanji.kanji] || false;
-                    return (
-                      <button
-                        key={kanji.kanji}
-                        onClick={() =>
-                          toggleKanjiKnown(paragraph.id, kanji.kanji)
-                        }
-                        className="text-left p-3 rounded-xl transition-all"
-                        style={{
-                          background: isKnown
-                            ? "rgba(34,197,94,0.15)"
-                            : "rgba(255,255,255,0.05)",
-                          border: isKnown
-                            ? "1px solid rgba(34,197,94,0.3)"
-                            : "1px solid rgba(255,255,255,0.08)",
-                        }}
-                      >
-                        <div className="text-lg font-bold text-white mb-0.5">
-                          {kanji.kanji}
-                        </div>
-                        <div className="text-xs text-white/50">
-                          {kanji.furigana}
-                        </div>
-                        <div className="text-xs text-white/40">
-                          {kanji.bangla}
-                        </div>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                সব প্যারাগ্রাফে ফিরুন
+              </button>
+
+              <div className="mb-8">
+                {/* Header */}
+                <div className="rounded-2xl p-5 mb-4" style={{ background: paragraph.isImportent ? "rgba(245,158,11,0.08)" : "rgba(255,255,255,0.08)", backdropFilter: "blur(16px)", border: paragraph.isImportent ? "2px solid rgba(245,158,11,0.4)" : "1px solid rgba(255,255,255,0.1)" }}>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-bold px-3 py-1 rounded-full" style={{ background: "rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.7)" }}>প্যারাগ্রাফ #{paragraph.id}</span>
+                    <div className="flex items-center gap-2">
+                      <button onClick={() => toggleImportant(paragraph.id, paragraph.isImportent)} className="text-xs font-bold px-3 py-1 rounded-full transition-all" style={{ background: paragraph.isImportent ? "rgba(245,158,11,0.2)" : "rgba(255,255,255,0.1)", color: paragraph.isImportent ? "#fbbf24" : "rgba(255,255,255,0.7)", border: paragraph.isImportent ? "1px solid rgba(245,158,11,0.4)" : "1px solid rgba(255,255,255,0.1)" }}>
+                        {paragraph.isImportent ? "⭐ গুরুত্বপূর্ণ" : "☆ গুরুত্বপূর্ণ করুন"}
                       </button>
-                    );
-                  })}
+                      <span className="text-xs font-bold px-3 py-1 rounded-full" style={{ background: score.correct === score.total && score.total > 0 ? "rgba(34,197,94,0.2)" : "rgba(255,255,255,0.1)", color: score.correct === score.total && score.total > 0 ? "#4ade80" : "rgba(255,255,255,0.7)" }}>
+                        {score.correct}/{score.total} সঠিক
+                      </span>
+                    </div>
+                  </div>
+                  <h2 className="text-xl font-extrabold text-white mb-1">{paragraph.title}</h2>
+                  <p className="text-base text-white/60 mb-1">{paragraph.title_bangla}</p>
+                  <p className="text-sm text-white/40">{paragraph.title_english}</p>
+                </div>
+
+                {/* Japanese Text */}
+                <div className="rounded-2xl p-5 mb-4" style={{ background: "rgba(255,255,255,0.06)", backdropFilter: "blur(16px)", border: "1px solid rgba(255,255,255,0.1)" }}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-lg">🇯🇵</span>
+                    <h3 className="text-base font-bold text-white">{showFurigana ? "ফুরিগানা (Furigana)" : "কাঞ্জি সহ পাঠ্য"}</h3>
+                    {!showFurigana && speakingId !== paragraph.id && <span className="text-xs text-purple-300/60 ml-auto">👆 কাঞ্জি শব্দে ক্লিক করুন</span>}
+                    {speakingId === paragraph.id && <span className="text-xs text-yellow-300/80 ml-auto animate-pulse">🔊 শুনছেন...</span>}
+                    <div className="ml-auto flex items-center gap-2">
+                      <select value={speechRate} onChange={(e) => setSpeechRate(Number(e.target.value))} className="text-xs px-2 py-1 rounded-lg focus:outline-none" style={{ background: "rgba(30,27,75,0.9)", border: "1px solid rgba(255,255,255,0.2)", color: "white" }}>
+                        <option value={0.5} style={{ color: "white", background: "#1e1b4b" }}>0.5x</option>
+                        <option value={0.6} style={{ color: "white", background: "#1e1b4b" }}>0.6x</option>
+                        <option value={0.7} style={{ color: "white", background: "#1e1b4b" }}>0.7x</option>
+                        <option value={0.8} style={{ color: "white", background: "#1e1b4b" }}>0.8x</option>
+                        <option value={1} style={{ color: "white", background: "#1e1b4b" }}>1x</option>
+                        <option value={1.2} style={{ color: "white", background: "#1e1b4b" }}>1.2x</option>
+                      </select>
+                      <button onClick={() => speakText(showFurigana ? paragraph.reading.furigana : paragraph.reading.with_kanji, paragraph.id)} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all" style={{ background: speakingId === paragraph.id ? "linear-gradient(135deg, #ef4444, #dc2626)" : "linear-gradient(135deg, #22c55e, #16a34a)", color: "white", boxShadow: speakingId === paragraph.id ? "0 4px 16px rgba(239,68,68,0.4)" : "0 4px 16px rgba(34,197,94,0.3)" }}>
+                        {speakingId === paragraph.id ? <><span className="w-1.5 h-3 bg-white rounded-sm animate-pulse" />বন্ধ করুন</> : <><svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" /></svg>শুনুন</>}
+                      </button>
+                    </div>
+                  </div>
+                  {showFurigana ? (
+                    <p className="reading-text-area text-lg leading-relaxed text-white/90" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>{paragraph.reading.furigana}</p>
+                  ) : speakingId === paragraph.id ? (
+                    <p className="reading-text-area text-lg leading-relaxed" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+                      {spokenWords.map((word, i) => (
+                        <span key={i} className="inline-block transition-all duration-300" style={{ color: i === currentWordIndex ? "#fbbf24" : i < currentWordIndex ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.9)", fontWeight: i === currentWordIndex ? "900" : "400", textShadow: i === currentWordIndex ? "0 0 20px rgba(251,191,36,0.6), 0 0 40px rgba(251,191,36,0.3)" : "none", padding: "2px 4px", borderRadius: "4px", background: i === currentWordIndex ? "rgba(251,191,36,0.15)" : "transparent" }}>{word}</span>
+                      ))}
+                    </p>
+                  ) : (
+                    <p className="reading-text-area text-lg leading-relaxed text-white/90" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}>
+                      {parseTextWithKanji(paragraph.reading.with_kanji, paragraph.kanji_list).map((segment, i) => {
+                        if (segment.isKanjiWord) {
+                          return <span key={i} onClick={(e) => handleKanjiClick(segment.reading!, segment.meaning!, segment.text, e)} className="cursor-pointer px-1 py-0.5 rounded-lg transition-all hover:bg-purple-500/30 inline-block" style={{ background: "rgba(139,92,246,0.15)", borderBottom: "2px solid rgba(139,92,246,0.4)" }}>{segment.text}</span>;
+                        }
+                        return <span key={i}>{segment.text}</span>;
+                      })}
+                    </p>
+                  )}
+                </div>
+
+                {/* Bangla Translation */}
+                <div className="rounded-2xl p-5 mb-4" style={{ background: "rgba(255,255,255,0.06)", backdropFilter: "blur(16px)", border: "1px solid rgba(255,255,255,0.1)" }}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-lg">🇧🇩</span>
+                    <h3 className="text-base font-bold text-white">বাংলা অনুবাদ</h3>
+                    <button onClick={() => speakText(paragraph.reading.bangla, paragraph.id + 100, "bn-BD")} disabled={banglaLoading} className="ml-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all" style={{ background: speakingId === paragraph.id + 100 ? "linear-gradient(135deg, #ef4444, #dc2626)" : banglaLoading ? "linear-gradient(135deg, #f59e0b, #d97706)" : "linear-gradient(135deg, #3b82f6, #2563eb)", color: "white", boxShadow: speakingId === paragraph.id + 100 ? "0 4px 16px rgba(239,68,68,0.4)" : banglaLoading ? "0 4px 16px rgba(245,158,11,0.4)" : "0 4px 16px rgba(59,130,246,0.3)", opacity: banglaLoading ? 0.8 : 1 }}>
+                      {banglaLoading ? <><svg className="w-3.5 h-3.5 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" /></svg>লোড হচ্ছে...</> : speakingId === paragraph.id + 100 ? <><span className="w-1.5 h-3 bg-white rounded-sm animate-pulse" />বন্ধ করুন</> : <><svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" /></svg>শুনুন</>}
+                    </button>
+                  </div>
+                  <p className="text-base leading-relaxed text-white/80">{paragraph.reading.bangla}</p>
+                </div>
+
+                {/* Questions */}
+                <div className="mb-4">
+                  <div className="flex items-center gap-2 mb-4"><span className="text-lg">❓</span><h3 className="text-base font-bold text-white">প্রশ্নোত্তর</h3></div>
+                  <div className="space-y-4">
+                    {paragraph.questions.map((question, qIndex) => {
+                      const currentAnswer = answers[paragraph.id]?.[question.id] || null;
+                      const isCorrect = currentAnswer === question.correct_answer;
+                      const showExp = showExplanations[`${paragraph.id}-${question.id}`];
+                      return (
+                        <div key={question.id} className="rounded-2xl p-5" style={{ background: "rgba(255,255,255,0.06)", backdropFilter: "blur(16px)", border: currentAnswer !== null ? (isCorrect ? "2px solid rgba(34,197,94,0.4)" : "2px solid rgba(239,68,68,0.4)") : "1px solid rgba(255,255,255,0.1)" }}>
+                          <div className="flex items-start gap-3 mb-3">
+                            <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0" style={{ background: "linear-gradient(135deg, #f093fb, #f5576c)" }}>{qIndex + 1}</span>
+                            <div><p className="text-base font-bold text-white">{question.question}</p><p className="text-sm text-white/50 mt-0.5">{question.question_bangla}</p></div>
+                          </div>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+                            {question.options.map((option) => {
+                              const isSelected = currentAnswer === option;
+                              const isOptionCorrect = option === question.correct_answer;
+                              return (
+                                <button key={option} onClick={() => handleAnswer(paragraph.id, question.id, option)} className="text-left px-4 py-3 rounded-xl text-sm font-medium transition-all" style={{ background: isSelected ? (isOptionCorrect ? "rgba(34,197,94,0.2)" : "rgba(239,68,68,0.2)") : (isOptionCorrect && currentAnswer !== null ? "rgba(34,197,94,0.1)" : "rgba(255,255,255,0.05)"), border: isSelected ? (isOptionCorrect ? "1px solid rgba(34,197,94,0.4)" : "1px solid rgba(239,68,68,0.4)") : (isOptionCorrect && currentAnswer !== null ? "1px solid rgba(34,197,94,0.3)" : "1px solid rgba(255,255,255,0.1)"), color: isSelected ? (isOptionCorrect ? "#4ade80" : "#f87171") : (isOptionCorrect && currentAnswer !== null ? "#4ade80" : "rgba(255,255,255,0.7)") }}>
+                                  {option}
+                                </button>
+                              );
+                            })}
+                          </div>
+                          <button onClick={() => toggleExplanation(`${paragraph.id}-${question.id}`)} className="text-xs text-white/50 hover:text-white/80 transition flex items-center gap-1">
+                            <span>{showExp ? "ভাষ্ট" : "ব্যাখ্যা দেখুন"}</span>
+                            <svg className={`w-3 h-3 transition-transform ${showExp ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                          </button>
+                          {showExp && <div className="mt-3 p-3 rounded-xl text-sm text-white/70" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)" }}>💡 {question.explanation}</div>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Kanji List */}
+                <div className="rounded-2xl p-5" style={{ background: "rgba(255,255,255,0.06)", backdropFilter: "blur(16px)", border: "1px solid rgba(255,255,255,0.1)" }}>
+                  <div className="flex items-center gap-2 mb-4"><span className="text-lg">📝</span><h3 className="text-base font-bold text-white">কাঞ্জি তালিকা</h3><span className="text-xs text-white/40 ml-auto">{paragraph.kanji_list.length}টি</span></div>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    {paragraph.kanji_list.map((kanji) => {
+                      const isKnown = kanjiKnown[paragraph.id]?.[kanji.kanji] || false;
+                      return (
+                        <button key={kanji.kanji} onClick={() => toggleKanjiKnown(paragraph.id, kanji.kanji)} className="text-left p-3 rounded-xl transition-all" style={{ background: isKnown ? "rgba(34,197,94,0.15)" : "rgba(255,255,255,0.05)", border: isKnown ? "1px solid rgba(34,197,94,0.3)" : "1px solid rgba(255,255,255,0.08)" }}>
+                          <div className="text-lg font-bold text-white mb-0.5">{kanji.kanji}</div>
+                          <div className="text-xs text-white/50">{kanji.furigana}</div>
+                          <div className="text-xs text-white/40">{kanji.bangla}</div>
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
           );
-        })}
+        })()}
 
         <div
           className="mt-8 text-center text-xs text-white/30 pt-6 mb-20"
