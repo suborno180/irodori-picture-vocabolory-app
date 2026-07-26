@@ -65,6 +65,8 @@ export default function JftReadingPreparationPage() {
   const banglaAudioRef = useRef<HTMLAudioElement | null>(null);
   const [banglaLoading, setBanglaLoading] = useState(false);
   const [filterImportant, setFilterImportant] = useState(false);
+  const [selectedText, setSelectedText] = useState<{ text: string; x: number; y: number } | null>(null);
+  const [isSpeakingSelection, setIsSpeakingSelection] = useState(false);
 
   const JFT_PASSWORD = "suborno.dev";
 
@@ -267,6 +269,67 @@ export default function JftReadingPreparationPage() {
       };
     }
   }, []);
+
+  useEffect(() => {
+    const handleMouseUp = () => {
+      const selection = window.getSelection();
+      const text = selection?.toString().trim();
+      if (text && text.length > 0) {
+        const range = selection?.getRangeAt(0);
+        if (range) {
+          const rect = range.getBoundingClientRect();
+          setSelectedText({
+            text,
+            x: rect.left + rect.width / 2,
+            y: rect.top - 10,
+          });
+        }
+      } else {
+        setSelectedText(null);
+      }
+    };
+
+    const handleMouseDown = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest(".reading-text-area")) {
+        setSelectedText(null);
+      }
+    };
+
+    document.addEventListener("mouseup", handleMouseUp);
+    document.addEventListener("mousedown", handleMouseDown);
+    return () => {
+      document.removeEventListener("mouseup", handleMouseUp);
+      document.removeEventListener("mousedown", handleMouseDown);
+    };
+  }, []);
+
+  const speakSelectedText = (text: string) => {
+    if (typeof window === "undefined" || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    setIsSpeakingSelection(true);
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "ja-JP";
+    utterance.rate = speechRate;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+
+    const voices = window.speechSynthesis.getVoices();
+    const jpVoice = voices.find((v) => v.lang.startsWith("ja"));
+    if (jpVoice) utterance.voice = jpVoice;
+
+    utterance.onend = () => {
+      setIsSpeakingSelection(false);
+      setSelectedText(null);
+    };
+    utterance.onerror = () => {
+      setIsSpeakingSelection(false);
+      setSelectedText(null);
+    };
+
+    window.speechSynthesis.speak(utterance);
+  };
 
   const isKanji = (char: string): boolean => {
     const code = char.charCodeAt(0);
@@ -781,14 +844,14 @@ export default function JftReadingPreparationPage() {
                 </div>
                 {showFurigana ? (
                   <p
-                    className="text-lg leading-relaxed text-white/90"
+                    className="reading-text-area text-lg leading-relaxed text-white/90"
                     style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
                   >
                     {paragraph.reading.furigana}
                   </p>
                 ) : speakingId === paragraph.id ? (
                   <p
-                    className="text-lg leading-relaxed"
+                    className="reading-text-area text-lg leading-relaxed"
                     style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
                   >
                     {spokenWords.map((word, i) => (
@@ -810,7 +873,7 @@ export default function JftReadingPreparationPage() {
                   </p>
                 ) : (
                   <p
-                    className="text-lg leading-relaxed text-white/90"
+                    className="reading-text-area text-lg leading-relaxed text-white/90"
                     style={{ fontFamily: "'Noto Sans JP', sans-serif" }}
                   >
                     {parseTextWithKanji(paragraph.reading.with_kanji, paragraph.kanji_list).map((segment, i) => {
@@ -1164,6 +1227,54 @@ export default function JftReadingPreparationPage() {
                   style={{ background: "#312e81", border: "2px solid rgba(139,92,246,0.5)", borderTop: "none", borderLeft: "none" }}
                 />
               </div>
+            </div>
+          </>
+        )}
+
+        {/* Text Selection Play Button */}
+        {selectedText && (
+          <>
+            <div
+              className="fixed inset-0 z-40"
+              onClick={() => setSelectedText(null)}
+            />
+            <div
+              className="fixed z-50"
+              style={{
+                left: `${Math.min(Math.max(selectedText.x, 40), window.innerWidth - 40)}px`,
+                top: `${Math.max(selectedText.y - 50, 10)}px`,
+                transform: "translateX(-50%)",
+              }}
+            >
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  speakSelectedText(selectedText.text);
+                }}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-bold text-white transition-all shadow-2xl"
+                style={{
+                  background: isSpeakingSelection
+                    ? "linear-gradient(135deg, #ef4444, #dc2626)"
+                    : "linear-gradient(135deg, #22c55e, #16a34a)",
+                  boxShadow: isSpeakingSelection
+                    ? "0 4px 20px rgba(239,68,68,0.5)"
+                    : "0 4px 20px rgba(34,197,94,0.5)",
+                }}
+              >
+                {isSpeakingSelection ? (
+                  <>
+                    <span className="w-1.5 h-3 bg-white rounded-sm animate-pulse" />
+                    বন্ধ করুন
+                  </>
+                ) : (
+                  <>
+                    <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+                    </svg>
+                    শুনুন
+                  </>
+                )}
+              </button>
             </div>
           </>
         )}
