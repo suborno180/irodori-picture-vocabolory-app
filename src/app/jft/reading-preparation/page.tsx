@@ -71,7 +71,7 @@ export default function JftReadingPreparationPage() {
   const fetchParagraphs = useCallback(async () => {
     try {
       setLoading(true);
-      const res = await fetch(`/api/jft-reading?limit=20${filterImportant ? "&important=true" : ""}`);
+      const res = await fetch(`/api/jft-reading?limit=100${filterImportant ? "&important=true" : ""}`);
       if (!res.ok) throw new Error("Failed to fetch");
       const data = await res.json();
       setParagraphs(data.paragraphs || []);
