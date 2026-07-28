@@ -11,7 +11,7 @@ export interface JftResource {
 export const jftResources: JftResource[] = [
   {
     id: "mt-1",
-    title: "MockTest- 1",
+    title: "MockTest - 1",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeuoXNg9F4uPLaDEwmIZCDI76GJHq540a5omZp9CQPF5lt4eg/viewform?usp=header",
     password: "irodoribhai1",
     type: "mocktest",
@@ -29,7 +29,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-2",
-    title: "Mocktest 2",
+    title: "MockTest - 2",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSf45gxgU7F-uMKpdwgEnV46Mt9Qf6b4u8iPUuAO1nOAf8pj9Q/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -38,7 +38,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-3",
-    title: "Mocktest-3",
+    title: "MockTest - 3",
     link: "https://forms.gle/SNp5tSn246wcHwBXA",
     password: "irodoribhai1",
     type: "mocktest",
@@ -74,7 +74,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-5",
-    title: "MockTest ৫",
+    title: "MockTest - 5",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSf1zYojYJJDTUWF8yN-I9z7sQ7KdOPPu9ljvdvZRb1fkG4x6A/viewform?fbzx=-2002065225803381673",
     password: "irodoribhai1",
     type: "mocktest",
@@ -83,7 +83,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-6",
-    title: "Mocktest- 6",
+    title: "MockTest - 6",
     link: "https://docs.google.com/forms/d/e/1FAIpQLScm35Ab90Cud3cTrtaDvVaDC9v-V_Np1iHjuWJb-AX7pSgWYg/viewform?fbzx=708441587961218692",
     password: "irodoribhaibatch-1",
     type: "mocktest",
@@ -92,7 +92,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-7",
-    title: "MockTest- 7",
+    title: "MockTest - 7",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfdvXFWN8VCQKD5mI50OvPMscU-BoKQZ8TADDtTK210_L1HSA/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -110,7 +110,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-9",
-    title: "Mocktest- 9",
+    title: "MockTest - 9",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfzX-XK67B5X3pUTti7kao12uYK1pGFlGl6lC_AHSYI3d5p7w/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -119,7 +119,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-10",
-    title: "মকটেষ্ট - ১০",
+    title: "MockTest - 10",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSc_bYBIelIglRhMhSqQgaGGpdZ3XkRmG3MwUfPEFrwbxUBTKQ/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -128,7 +128,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-11",
-    title: "মক টেস্ট- ১১",
+    title: "MockTest - 11",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdciIGaSf-PM3ytYhDfk4Sy_rElvZZ1i5OCPqU6gsfwCzW10Q/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -137,7 +137,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-12",
-    title: "মকটেস্ট - ১২",
+    title: "MockTest - 12",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSekkN1pgMVl5MmxXK3qXJB0ZJj5NHwCmqBA4iPmT20QUKoLLQ/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -146,7 +146,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-13",
-    title: "MockTest 13",
+    title: "MockTest - 13",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdIIoCHvnnk-L_0LGkLCXsr4PRrbuq_wALb_0S_9-jwKyXsrQ/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -155,7 +155,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-14",
-    title: "Mocktest- 14",
+    title: "MockTest - 14",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSextnkNiUKHHeXhxqSoP0t9HDjusfHOZu-wASuR4PU_2I7WSQ/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -164,7 +164,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-15",
-    title: "Mocktest- 15",
+    title: "MockTest - 15",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfPo7tMqweOApzJFMqG0OLvGmQltTcW7m1sYerfj97Tzgp0yw/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -173,7 +173,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-17",
-    title: "Mocktest- 17",
+    title: "MockTest - 17",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeDaC-nZkFtRYPbFJvXN_8q5aKxVV5UV-siTVsiLqnlaFNNgQ/viewform?fbzx=-5261558040964941299",
     password: "irodoribhai1",
     type: "mocktest",
@@ -182,7 +182,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-18",
-    title: "Mock test - 18",
+    title: "MockTest - 18",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeM5MKOxI3VrXA5xKZ2n72AQgBX-NTJ7XttilD0kgkCq3tv6w/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -191,7 +191,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-19",
-    title: "Mocktest- 19",
+    title: "MockTest - 19",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSei0IFIkaLQtpPKt_xEy_FGXkxaZ0PKNTckwrgLxXAWUhNm7A/viewform?fbzx=-6755156405477424518",
     password: "irodoribhai1",
     type: "mocktest",
@@ -200,7 +200,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-21",
-    title: "মকটেস্ট ২১",
+    title: "MockTest - 21",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeHjlkciF-4n1NxNt0w-5QniS97C7DRWW6JOCHX_ojMoMAErQ/viewform",
     password: "irodoribhai1",
     type: "mocktest",
@@ -209,7 +209,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-22",
-    title: "মকটেস্ট ২২",
+    title: "MockTest - 22",
     link: "https://22-mocktest-irodorivai.netlify.app/",
     password: "",
     type: "mocktest",
@@ -218,7 +218,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-23",
-    title: "মকটেস্ট ২৩",
+    title: "MockTest - 23",
     link: "https://23-mocktest-irodorivai.netlify.app/",
     password: "",
     type: "mocktest",
@@ -227,7 +227,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-24",
-    title: "মক টেস্ট ২৪",
+    title: "MockTest - 24",
     link: "https://24-mocktest-irodorivai.netlify.app/",
     password: "",
     type: "mocktest",
@@ -236,7 +236,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-25",
-    title: "মকটেস্ট ২৫",
+    title: "MockTest - 25",
     link: "https://25-mocktest-irodorivai.netlify.app/",
     password: "",
     type: "mocktest",
@@ -245,7 +245,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-26",
-    title: "মকটেস্ট ২৬",
+    title: "MockTest - 26",
     link: "https://26-mocktest-irodorivai.netlify.app/",
     password: "",
     type: "mocktest",
@@ -254,7 +254,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-27",
-    title: "২৭ নাম্বার মক টেস্ট",
+    title: "MockTest - 27",
     link: "https://27-mocktest-irodorivai.netlify.app/",
     password: "",
     type: "mocktest",
@@ -263,7 +263,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-28",
-    title: "মকটেস্ট ২৮ (পরিবর্তিত)",
+    title: "MockTest - 28",
     link: "https://28-mocktest-irodorivai.netlify.app/",
     password: "",
     type: "mocktest",
@@ -272,7 +272,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "xbook-l13",
-    title: "X book Lesson 13 Mocktest",
+    title: "X Book Lesson 13 MockTest",
     link: "https://forms.office.com/pages/responsepage.aspx?id=oy_HkJxhhky73GK1b_fZOWCUYNw6LTpHr9kYeH6jXspUQTczRFo4VEM0NUpLOFYyMEY2Sk9XQzVNTCQlQCN0PWcu&route=shorturl",
     password: "",
     type: "mocktest",
@@ -281,7 +281,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "xbook-l14",
-    title: "X book Lesson 14 Mocktest",
+    title: "X Book Lesson 14 MockTest",
     link: "https://forms.office.com/pages/responsepage.aspx?id=oy_HkJxhhky73GK1b_fZOWCUYNw6LTpHr9kYeH6jXspUQUFHMldLUkhBQlZMTzI3TEcxOVBFTEVTRSQlQCN0PWcu&route=shorturl",
     password: "",
     type: "mocktest",
@@ -290,7 +290,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "xbook-l15",
-    title: "X book Lesson 15 Mocktest",
+    title: "X Book Lesson 15 MockTest",
     link: "https://forms.office.com/pages/responsepage.aspx?id=oy_HkJxhhky73GK1b_fZOWCUYNw6LTpHr9kYeH6jXspUM0MxOFBUSUtZTVA0WVJBTkFPQVBIVDFSSiQlQCN0PWcu&route=shorturl",
     password: "",
     type: "mocktest",
@@ -299,7 +299,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "xbook-l16",
-    title: "X book Lesson 16 Mocktest",
+    title: "X Book Lesson 16 MockTest",
     link: "https://forms.office.com/pages/responsepage.aspx?id=oy_HkJxhhky73GK1b_fZOWCUYNw6LTpHr9kYeH6jXspUNVc1SFU3V0VSNVIwWDFKS1BXTUlIRlcxUyQlQCN0PWcu&route=shorturl",
     password: "",
     type: "mocktest",
@@ -308,7 +308,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "xbook-l17",
-    title: "X book Lesson 17 Mocktest",
+    title: "X Book Lesson 17 MockTest",
     link: "https://forms.office.com/pages/responsepage.aspx?id=oy_HkJxhhky73GK1b_fZOWCUYNw6LTpHr9kYeH6jXspUOTdLMVBLWDk2QjBHNUsyVTJSTjU3WDA1NCQlQCN0PWcu&route=shorturl",
     password: "",
     type: "mocktest",
@@ -317,7 +317,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "xbook-l18",
-    title: "X book Lesson 18 Mocktest",
+    title: "X Book Lesson 18 MockTest",
     link: "https://forms.office.com/pages/responsepage.aspx?id=oy_HkJxhhky73GK1b_fZOWCUYNw6LTpHr9kYeH6jXspUMjA5MzJZWFNVNUhBTFZHWUhCR0RMODdXTCQlQCN0PWcu&route=shorturl",
     password: "",
     type: "mocktest",
@@ -497,7 +497,7 @@ export const jftResources: JftResource[] = [
   },
   {
     id: "mt-midnight",
-    title: "মিড নাইট সারপ্রাইজ টেস্ট",
+    title: "Midnight Surprise Test",
     link: "https://update-short-test.netlify.app/",
     password: "",
     type: "mocktest",

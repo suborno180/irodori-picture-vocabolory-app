@@ -231,7 +231,7 @@ export default function JftPage() {
             border: "1px solid rgba(255,255,255,0.15)",
           }}
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-fuchsia-500/10 to-pink-500/10 rounded-full -mr-32 -mt-32 blur-3xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-linear-to-br from-fuchsia-500/10 to-pink-500/10 rounded-full -mr-32 -mt-32 blur-3xl" />
           <div className="relative flex flex-wrap justify-between items-center">
             <div>
               <div className="flex items-center gap-2 mb-1">
