@@ -117,7 +117,10 @@ export default function JftPage() {
     return [...result].sort((a, b) => {
       const pa = priorityOrder[a.priority] ?? 0;
       const pb = priorityOrder[b.priority] ?? 0;
-      return pa - pb;
+      if (pa !== pb) return pa - pb;
+      const numA = parseInt(a.id.replace(/\D/g, ""), 10) || 0;
+      const numB = parseInt(b.id.replace(/\D/g, ""), 10) || 0;
+      return numA - numB;
     });
   }, [filterType, searchQuery]);
 
