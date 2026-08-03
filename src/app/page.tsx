@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900">
       <a href="#mode-options" className="skip-link">
         Skip to mode selection
       </a>
@@ -10,7 +10,7 @@ export default function Home() {
       <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <header className="text-center mb-12 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-violet-400">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-violet-400">
               Irodori
             </span>{" "}
             Vocabulary

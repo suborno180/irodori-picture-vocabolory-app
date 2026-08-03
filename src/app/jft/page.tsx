@@ -268,6 +268,9 @@ export default function JftPage() {
               <a href="/jft/expression-practice" className="px-3 py-1.5 rounded-full text-white text-sm font-medium transition" style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.1)" }}>
                 💬
               </a>
+              <a href="/jft/script-vocabulary-practice" className="px-3 py-1.5 rounded-full text-white text-sm font-medium transition" style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.1)" }}>
+                📝
+              </a>
               <a href="/jft/reading-preparation" className="px-3 py-1.5 rounded-full text-white text-sm font-medium transition" style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.1)" }}>
                 📖
               </a>
