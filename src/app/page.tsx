@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ExternalCard from "@/components/ExternalCard";
 
 export default function Home() {
   return (
@@ -87,6 +88,77 @@ export default function Home() {
             </div>
           </Link>
         </nav>
+
+        <section aria-label="ইরুদোরি থেরাপী" className="max-w-3xl mx-auto mt-10 sm:mt-14">
+          <h2 className="text-xs sm:text-sm font-semibold text-slate-400 mb-4 text-center">
+            ইরুদোরি ভাইয়ের থেরাপী সাইট
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+            <ExternalCard
+              href="https://picture-theraphy-irodoribhai-special-forallhwihfjhfkielkps.pages.dev/"
+              accent="amber"
+              title="পিকচার থেরাপী"
+              description="৫৪ লেসনের সব ছবি দিয়ে বানানো টেস্ট"
+              icon={
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              }
+            />
+            <ExternalCard
+              href="https://xyz-vocabulary-practice-and-memorising.pages.dev/"
+              accent="rose"
+              title="ভোকাবুলারি থেরাপী"
+              description="ফ্ল্যাশকার্ডে শিখুন, বার বার এক্সাম দিন"
+              icon={
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2zm5 5v8m3-8v8" />
+              }
+            />
+            <ExternalCard
+              href="https://kanjitestallxyzbookhjjdfghhgggdtttehhhdggikiiiiujeuujhdjjj.pages.dev/"
+              accent="indigo"
+              title="কাঞ্জি থেরাপী"
+              description="সব বইয়ের ৪৩১টি কাঞ্জি টেস্ট"
+              icon={
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5.5A2.5 2.5 0 016.5 3H12v17H6.5A2.5 2.5 0 004 22V5.5zM20 5.5A2.5 2.5 0 0017.5 3H12v17h5.5A2.5 2.5 0 0020 22V5.5z" />
+              }
+            />
+            <ExternalCard
+              href="https://expression-theraphy-byirodorivaiuyrhhdhhhjekdhhdhhhhjj.pages.dev/"
+              accent="emerald"
+              title="এক্সপ্রেশন থেরাপী"
+              description="সব এক্সপ্রেশন ও কনভার্সেশন টেস্ট"
+              icon={
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10.5h8m-8 3h5m8.25-6.75a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6.75v7.5A2.25 2.25 0 005.25 16.5h2.6l2.4 3 2.4-3h6.1a2.25 2.25 0 002.25-2.25v-7.5z" />
+              }
+            />
+            <ExternalCard
+              href="https://lesson-based-mocktest-54-lesson-xyz-irodorivaii.pages.dev/"
+              accent="cyan"
+              title="লেসন মক টেস্ট"
+              description="৫৪ লেসন ভিত্তিক মক টেস্ট"
+              icon={
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              }
+            />
+            <ExternalCard
+              href="https://3637867466783666383883jsukkk.pages.dev/"
+              accent="violet"
+              title="স্ক্রিপ্ট ও ভোকাবুলারি"
+              description="লেসন ৩৬, ৩৭, ৩৮ এর টেস্ট"
+              icon={
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+              }
+            />
+            <ExternalCard
+              href="https://22-36mocjkfjuurhhfjjfjsiooosijrjfuutrjjfysireujfjryhfijosr.pages.dev/"
+              accent="teal"
+              title="মক টেস্ট ২২-৩৬"
+              description="রিসেন্ট এক্সামের প্রস্তুতি"
+              icon={
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+              }
+            />
+          </div>
+        </section>
       </main>
     </div>
   );

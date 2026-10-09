@@ -658,6 +658,15 @@ export const jftResources: JftResource[] = [
     priority: "high",
   },
   {
+    id: "mt-22-36",
+    title: "মকটেস্ট থেরাপী (২২-৩৬ ফুল সিরিজ)",
+    link: "https://22-36mocjkfjuurhhfjjfjsiooosijrjfuutrjjfysireujfjryhfijosr.pages.dev/",
+    password: "irodorivai",
+    type: "mocktest",
+    note: "পাসওয়ার্ড: irodorivai — রিসেন্ট এক্সামের প্রস্তুতি, বিশেষ করে যাদের ৫/৭ দিন বা পরীক্ষা",
+    priority: "high",
+  },
+  {
     id: "expr-9",
     title: "Expression - 9",
     link: "https://9-expression63yyhegiuwbgsdby673ujoppp.netlify.app/",
